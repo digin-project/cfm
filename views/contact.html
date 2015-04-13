@@ -16,7 +16,7 @@
             <input type="text" class="form-control" ng-model="contact.lastname" id="contact-last-name" placeholder="Votre nom">
         </div>
         <div class="form-group">
-            <label for="contact-birthday">Date de naissance</label>
+            <label for="contact-birthday">Date de naissance (jj/mm/aaaa)</label>
             <input type="text" class="form-control" ng-model="contact.birthday" id="contact-birthday" placeholder="Votre date de naissance">
         </div>
         <div class="form-group">
@@ -52,7 +52,12 @@
                 <input type="checkbox" ng-model="contact.newsletter"> J'accepte de recevoir la Lettre d'information de CFM 33 (Centre de formation Moto)
             </label>
         </div>
+        <div class="form-group">
+            <b>{{ captcha | uppercase }}</b>
+            <label for="contact-captcha">Clé de validation</label>
+            <input type="text" class="form-control" ng-model="contact.captcha" id="contact-captcha" placeholder="Recopiez les caractères ci-dessus">
+        </div>
 
-        <button type="submit" class="btn btn-default" ng-click="send(contact)">Submit</button>
+        <button type="submit" class="btn btn-default" ng-click="send(contact)">Envoyer</button>
     </form>
 </div>
