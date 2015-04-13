@@ -20,3 +20,12 @@
 .clear {
 	clear :both;
 }
+
+/**
+ * Bootstrap override
+*/
+.form-control {
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+}
