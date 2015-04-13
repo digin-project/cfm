@@ -1,0 +1,58 @@
+#questionnaire {
+	padding : 20px 0;
+	margin-top: 20px;
+	background-color: grey;
+}
+
+#questionnaire div label {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#questionnaire .step1 ul {
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding-left: 0;
+	padding-bottom: 20px;
+}
+#questionnaire .step1 ul li {
+	display:inline-block;
+	width : 20%;
+	padding : 0 2%;
+	list-style: none;
+	text-align: center;
+}
+#questionnaire .step1 ul li a {
+	display: block;
+	width : 100%;
+}
+#questionnaire input[type="text"] {
+	width: 100%;
+	display: block;
+	padding : 5px;
+}
+#questionnaire .actions {
+	width: 100%;
+	margin-top: 20px;
+}
+#questionnaire .actions button {
+	width: 49%;
+	padding : 20px;
+	border : none;
+	float: right;
+}
+#questionnaire .actions button:first-child {
+	float : left;
+}
+
+#questions .askQuestions {
+	padding-top : 20px;
+}
+
+#questions .askQuestions a {
+	padding-top : 20px;
+	text-align: center;
+	color : black;
+	font-size: 0.9em;
+	text-decoration: none;
+}
