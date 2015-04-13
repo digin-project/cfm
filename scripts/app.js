@@ -9,6 +9,13 @@ angular.module('cfm', ['ngRoute'])
             .otherwise({ redirectTo: '/' })
     })
 
-    .run(function(){
-
+    .run(function($rootScope){
+		$rootScope.addErrorMsg = function(msg) {
+            $rootScope.errorMsg = msg
+            setTimeout(function() {
+                $rootScope.$apply(function(){
+                    $rootScope.errorMsg = null;
+                })
+            }, 2000);
+        }
     });

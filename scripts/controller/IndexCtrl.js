@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('cfm')
-    .controller('IndexCtrl', function($scope, $http) {
+    .controller('IndexCtrl', function($rootScope, $scope, $http) {
     	$scope.hideQuestions = true;
     	$scope.step = 1;
     	$scope.myTypeChoices = ['1', '2', '3', '4', '5']
@@ -34,7 +34,7 @@ angular.module('cfm')
     			if($scope.myQuest.myType != "") {
     				$scope.step = 2
     			} else {
-                    $scope.addErrorMsg("Vous devez choisir une option.");
+                    $rootScope.addErrorMsg("Vous devez choisir une option.");
                 }
     		}
     		if($scope.step == 2) {
@@ -42,31 +42,30 @@ angular.module('cfm')
                     if(!isNaN(parseInt($scope.myQuest.mySector, 10)) && $scope.myQuest.mySector.length == 5){
                         $scope.step = 3
                     } else {
-                        $scope.addErrorMsg("Le code postal n\'est pas valide.");
+                        $rootScope.addErrorMsg("Le code postal n\'est pas valide.");
                     }
+                } else {
+                    $rootScope.addErrorMsg("Vous devez entrer un code postal.");
                 }
     		}
             if($scope.step == 3) {
                 if($scope.myQuest.myType != "" && $scope.myQuest.mySector != "" && $scope.myQuest.myImportant != "") {
                     $scope.step = 4
+                } else {
+                    $rootScope.addErrorMsg("Vous devez choisir une option.");
                 }
             }
             if($scope.step == 4) {
                 if($scope.myQuest.myType != "" && $scope.myQuest.mySector != "" && $scope.myQuest.myImportant != "" && $scope.myQuest.myChoices != "") {
                     //On traite le résultat du formulaire
+                } else {
+                    $rootScope.addErrorMsg("Vous devez choisir une option.");
                 }
             }
     	}
         $scope.resetStep = function() {
-
+            if($scope.step > 1) $scope.step--
         }
 
-        $scope.addErrorMsg = function(msg) {
-            $scope.errorMsg = msg
-            setTimeout(function() {
-                $scope.$apply(function(){
-                    $scope.errorMsg = null;
-                })
-            }, 2000);
-        }
+        
     });

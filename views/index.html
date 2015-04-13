@@ -31,9 +31,11 @@
 					<input type="hidden" ng-model="myQuest.myType"/>
 					<ul class="myTypeChoices">
 						<li ng-repeat="m in myTypeChoices">
-							<a href="" ng-click="changeMyType(m)">{{ m }}</a>
+							<a href="" ng-class="{active : myQuest.myType == m}" ng-click="changeMyType(m)">{{ m }}</a>
 						</li>
 					</ul>
+					<p ng-bind="myQuest.myType"></p>
+					<p ng-if="!myQuest.myType">Veuillez choisir votre niveau parmis les propositions ci-dessus.</p>
 				</div>
 				<div class="step2 col-md-12" ng-show="step == 2">
 					<label for="mySector">Dans quel secteur résidez-vous ?</label>
@@ -54,9 +56,9 @@
 
 				</div>
 				<div class="actions col-md-12">
-					<button ng-click="resetStep()">Retour</button>
+					<button ng-show="step > 1" ng-click="resetStep()">Retour</button>
 					<button ng-click="changeStep()">Suivant ({{step}} / 4)</button>
-					
+					<div class="clear"></div>
 				</div>
 			</form>
 			<div class="actions">
