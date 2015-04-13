@@ -1,0 +1,58 @@
+<ng-include src="'views/fragments/navbar.html'"></ng-include>
+
+<div class="container">
+
+    <div class="message alert" ng-class="{'success' : success}" ng-if="message">
+        <h3>{{ message }}</h3>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="contact-first-name">Prénom</label>
+            <input type="text" class="form-control" ng-model="contact.firstname" id="contact-first-name" placeholder="Votre prénom">
+        </div>
+        <div class="form-group">
+            <label for="contact-last-name">Nom</label>
+            <input type="text" class="form-control" ng-model="contact.lastname" id="contact-last-name" placeholder="Votre nom">
+        </div>
+        <div class="form-group">
+            <label for="contact-birthday">Date de naissance</label>
+            <input type="text" class="form-control" ng-model="contact.birthday" id="contact-birthday" placeholder="Votre date de naissance">
+        </div>
+        <div class="form-group">
+            <label for="contact-mail">Email</label>
+            <input type="text" required class="form-control" ng-model="contact.mail" id="contact-mail" placeholder="Votre adresse email">
+        </div>
+        <div class="form-group">
+            <label for="contact-mobile">Mobile</label>
+            <input type="text" class="form-control" ng-model="contact.mobile" id="contact-mobile" placeholder="Votre numéro de téléphone mobile">
+        </div>
+        <div class="radio">
+            <p>Vous souhaitez être rappeler de préférence</p>
+            <div>
+                <label ng-repeat="day in days">
+                    <input type="radio" value="{{ day | lowercase}}" ng-model="contact.day"> {{ day }}
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" value="matin" ng-model="contact.when"> Matin
+                </label>
+                <label>
+                    <input type="radio" value="apres-midi" ng-model="contact.when"> Après-midi
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="contact-other">Vos demandes, remarques ou suggestions</label>
+            <textarea class="form-control" ng-model="contact.other" id="contact-other"></textarea>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="contact.newsletter"> J'accepte de recevoir la Lettre d'information de CFM 33 (Centre de formation Moto)
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-default" ng-click="send(contact)">Submit</button>
+    </form>
+</div>
