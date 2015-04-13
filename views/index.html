@@ -5,9 +5,9 @@
 	</section>
 	<section id="presentation" class="col-md-12">
 		<h1>CMF, Réussite et sécurité pour tous.</h1>
-		<p>efazefa</p>
+		<p>Aenean non neque ut lacus viverra convallis. Cras sit amet semper metus. Vestibulum a ornare libero. Nam pellentesque ultrices pharetra. Suspendisse vel laoreet erat. Aenean gravida, lectus at semper ultricies, erat ex gravida elit, commodo tempus quam dolor et massa. Donec felis elit, consequat at lectus sed, hendrerit pellentesque urna.</p>
 		<h3>92% de réussite aux examens.</h3>
-		<p>faefae</p>
+		<p>Mauris at mattis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus rhoncus est in cursus. Phasellus sodales vel ipsum eu maximus. Vestibulum eu massa vel mauris egestas fringilla. Nam ultricies ligula velit. Curabitur at laoreet nisl, non commodo leo.</p>
 		<div class="avisClients">
 			<div class="col-md-12">
 				<a target="_blank" href="http://www.opinionsystem.fr/company_result_notice.php?company_id=178&result_key=4d90196b59c9cdb1b554a188471612de" title="Nos avis clients, 92% de satisfaction">
@@ -17,12 +17,52 @@
 			<iframe src="http://www.tooteclair.com/company_rating.php?company_id=178&amp;rating_key=96e0da343241f6f9c9dcbcff3619b909&amp;language=fre" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 180px; height: 22px; margin:10; z-index:2500;"></iframe>
 			<h4>92% de clients satisfaits.</h4>
 		</div>
-		<div class="askQuestions">
-			<a ng-click="hideQuestions = !hideQuestions" href="" >
-				Le CFM c'est une approche pédagogique personnalisée, et ça commence ici. >> 
+	</section>
+	<section id="questions" class="row-fluid">
+		<div class="askQuestions col-md-12">
+			<a ng-click="scrollQuestions()" href="" >
+				Le CFM c'est une approche pédagogique personnalisée, et ça commence ici >> 
 			</a>
 		</div>
-		<div id="questionnaire" ng-hide="hideQuestions" class="ng-hide">
+		<div id="questionnaire" class="row-fluid">
+			<form ng-model="myQuest" class="">				
+				<div class="step1 col-md-12" ng-show="step == 1">
+					<label for="myType">Quel motard êtes-vous ?</label>
+					<input type="hidden" ng-model="myQuest.myType"/>
+					<ul class="myTypeChoices">
+						<li ng-repeat="m in myTypeChoices">
+							<a href="" ng-click="changeMyType(m)">{{ m }}</a>
+						</li>
+					</ul>
+				</div>
+				<div class="step2 col-md-12" ng-show="step == 2">
+					<label for="mySector">Dans quel secteur résidez-vous ?</label>
+					<input type="text" ng-model="myQuest.mySector" placeholder="Code Postal (ex : 33700)"/>
+				</div>
+				<div class="step3 col-md-12" ng-show="step == 3">
+					<label for="myImportant">Le plus important pour vous ? </label>
+					<select name="myImportant" id="myImportant" ng-model="myQuest.myImportant">
+						<option ng-repeat="m in myImportantChoices" value="fefe">fef</option>
+					</select>
+
+				</div>
+				<div class="step4 col-md-12" ng-show="step == 4">
+					<label for="myChoices">Quel est le critère décisif pour vous dans le choix d'une moto école ?</label>
+					<select name="myChoices" id="myChoices" ng-model="myQuest.myChoices">
+						<option ng-repeat="m in myChoicesChoices" value="fefe">fef</option>
+					</select>
+
+				</div>
+				<div class="actions col-md-12">
+					<button ng-click="resetStep()">Retour</button>
+					<button ng-click="changeStep()">Suivant ({{step}} / 4)</button>
+					
+				</div>
+			</form>
+			<div class="actions">
+
+			</div>
 		</div>
 	</section>
 </section>
+<ng-include src="'views/fragments/flash.html'"></ng-include>
