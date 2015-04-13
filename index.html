@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="cfm">
     <head>
         <title></title>
         <meta charset="utf-8">
@@ -8,9 +8,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     </head>
     <body>
-
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <div ng-view></div>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="scripts/controller/IndexCtrl.js"></script>
     </body>
 </html>
