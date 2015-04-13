@@ -20,3 +20,29 @@ nav .navbar-header .navbar-toggle {
 }
 nav .navbar-header .navbar-toggle:hover { background: none; }
 nav .navbar-collapse { height: 0; }
+
+.flash {
+    position: fixed;
+    top : 20px;
+    left : 20px;
+    right: 20px;
+    z-index: 1040;
+    padding : 10px;
+    color : white;
+    webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.flash.ng-hide {    
+    opacity : 0;
+}
+
+.errorMessages {
+    background-color: red;
+}
+
+.clear {
+    clear :both;
+}
