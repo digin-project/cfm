@@ -1,6 +1,11 @@
 <ng-include src="'views/fragments/navbar.html'"></ng-include>
 
 <div class="container">
+
+    <div class="message alert" ng-class="{'success' : success}" ng-if="message">
+        <h3>{{ message }}</h3>
+    </div>
+
     <form>
         <div class="form-group">
             <label for="contact-first-name">Prénom</label>
@@ -20,36 +25,21 @@
         </div>
         <div class="form-group">
             <label for="contact-mobile">Mobile</label>
-            <input type="number" class="form-control" ng-model="contact.mobile" id="contact-mobile" placeholder="Votre numéro de téléphone mobile">
+            <input type="text" class="form-control" ng-model="contact.mobile" id="contact-mobile" placeholder="Votre numéro de téléphone mobile">
         </div>
         <div class="radio">
             <p>Vous souhaitez être rappeler de préférence</p>
             <div>
-                <label>
-                    <input type="radio"> Lundi
-                </label>
-                <label>
-                    <input type="radio"> Mardi
-                </label>
-                <label>
-                    <input type="radio"> Mercredi
-                </label>
-                <label>
-                    <input type="radio"> Jeudi
-                </label>
-                <label>
-                    <input type="radio"> Vendredi
-                </label>
-                <label>
-                    <input type="radio"> Samedi
+                <label ng-repeat="day in days">
+                    <input type="radio" value="{{ day | lowercase}}" ng-model="contact.day"> {{ day }}
                 </label>
             </div>
             <div>
                 <label>
-                    <input type="radio"> Matin
+                    <input type="radio" value="matin" ng-model="contact.when"> Matin
                 </label>
                 <label>
-                    <input type="radio"> Après-midi
+                    <input type="radio" value="apres-midi" ng-model="contact.when"> Après-midi
                 </label>
             </div>
         </div>
@@ -63,7 +53,6 @@
             </label>
         </div>
 
-        <button type="submit" class="btn btn-default">Submit</button>
-        {{ contact | json }}
+        <button type="submit" class="btn btn-default" ng-click="send(contact)">Submit</button>
     </form>
 </div>
