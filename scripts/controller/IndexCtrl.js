@@ -4,9 +4,23 @@ angular.module('cfm')
     .controller('IndexCtrl', function($rootScope, $scope, $http) {
     	$scope.hideQuestions = true;
     	$scope.step = 1;
-    	$scope.myTypeChoices = ['1', '2', '3', '4', '5']
-        $scope.myImportantChoices = ['1', '2', '3', '4', '5']
-        $scope.myChoicesChoices = ['1', '2', '3', '4', '5']
+    	$scope.myTypeChoices = [
+            {alias : 'novice', title : 'Je n\'ai jamais pratiqué la moto', image : '', color : ''},
+            {alias : 'debutant', title : 'Je pratique la moto légère occasionnellement', image : '', color : ''},
+            {alias : 'confirm', title : 'Je suis confirmé', image : '', color : ''},
+            {alias : 'expert', title : 'Je suis expert', image : '', color : ''},
+            {alias : 'pilote', title : 'Je suis un pilote !', image : '', color : ''}]
+        $scope.myChoicesChoices = [
+            {alias : '1', title : 'Passer le permis le plus rapidement possible'},
+            {alias : '2', title : 'Pouvoir prendre le temps d\'apprendre sans pression et à mon rythme'},
+            {alias : '3', title : 'Maîtriser les bases de la moto sportive'}
+            ]
+        $scope.myImportantChoices = [
+            {alias : '1', title : 'Etre entouré par des moniteurs expérimentés et à l\'écoute'},
+            {alias : '2', title : 'Les avis des anciens élèves'},
+            {alias : '3', title : 'L\'existence d\'une vraie communauté autour de la marque de laquelle vous pourriez faire partie'},
+            {alias : '4', title : 'a proximité de mon domicile ou la possibilité de me loger'}
+            ]
     	$scope.myQuest = {
     		myType : "",
     		mySector : "",
@@ -32,7 +46,7 @@ angular.module('cfm')
     	$scope.changeStep = function() {
     		if($scope.step == 1) {
     			if($scope.myQuest.myType != "") {
-    				$scope.step = 2
+    				return $scope.step = 2
     			} else {
                     $rootScope.addErrorMsg("Vous devez choisir une option.");
                 }
@@ -40,7 +54,7 @@ angular.module('cfm')
     		if($scope.step == 2) {
                 if($scope.myQuest.myType != "" && $scope.myQuest.mySector != "") {
                     if(!isNaN(parseInt($scope.myQuest.mySector, 10)) && $scope.myQuest.mySector.length == 5){
-                        $scope.step = 3
+                       return $scope.step = 3
                     } else {
                         $rootScope.addErrorMsg("Le code postal n\'est pas valide.");
                     }
@@ -50,7 +64,7 @@ angular.module('cfm')
     		}
             if($scope.step == 3) {
                 if($scope.myQuest.myType != "" && $scope.myQuest.mySector != "" && $scope.myQuest.myImportant != "") {
-                    $scope.step = 4
+                    return $scope.step = 4
                 } else {
                     $rootScope.addErrorMsg("Vous devez choisir une option.");
                 }
