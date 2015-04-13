@@ -1,0 +1,22 @@
+nav.navbar {
+    background: #fff;
+    height: 70px;
+    border: 0;
+}
+nav .navbar-header { height: 70px; }
+nav .navbar-header .navbar-brand {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    float: inherit;
+    width: 145px;
+}
+nav .navbar-header .navbar-toggle {
+    float: left;
+    border: none;
+    position: relative;
+    left: 5%;
+    top: 11px;
+}
+nav .navbar-header .navbar-toggle:hover { background: none; }
+nav .navbar-collapse { height: 0; }

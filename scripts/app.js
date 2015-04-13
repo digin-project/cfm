@@ -19,4 +19,21 @@ angular.module('cfm', ['ngRoute'])
                 })
             }, 2000);
         }
+
+    })
+    /**
+     * @directive includeReplace
+     *
+     * Replace html into DOM
+     * Delete webcomponent ng-include, better for SEO
+     * @return {Object} includeReplace
+     */
+    .directive('includeReplace', function () {
+        return {
+            require: 'ngInclude',
+            restrict: 'A',
+            link: function (scope, el, attrs) {
+                el.replaceWith(el.children());
+            }
+        };
     });
