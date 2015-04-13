@@ -11,15 +11,12 @@
 	border-radius: 5px;
 
 }
-
-.flash.ng-hide {	
+.flash.ng-hide {
 	opacity : 0;
 }
-
 .errorMessages {
 	background-color: red;
 }
-
 .clear {
 	clear :both;
 }
