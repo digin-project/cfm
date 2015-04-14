@@ -41,9 +41,18 @@ nav .navbar-collapse { height: 0; }
 }
 
 .errorMessages {
-    background-color: red;
+    background-color: #ba2124;
 }
 
 .clear {
     clear :both;
+}
+
+footer {
+    text-align: center;
+    color : #a5a9ac;
+}
+
+footer .socials a {
+    padding : 20px 0;
 }

@@ -7,9 +7,9 @@ angular.module('cfm')
     	$scope.myTypeChoices = [
             {alias : 'novice', title : 'Je n\'ai jamais pratiqué la moto', image : '', color : ''},
             {alias : 'debutant', title : 'Je pratique la moto légère occasionnellement', image : '', color : ''},
-            {alias : 'confirm', title : 'Je suis confirmé', image : '', color : ''},
-            {alias : 'expert', title : 'Je suis expert', image : '', color : ''},
-            {alias : 'pilote', title : 'Je suis un pilote !', image : '', color : ''}]
+            {alias : 'confirme', title : 'Je suis confirmé', image : '', color : ''},
+            {alias : 'initie', title : 'Je suis expert', image : '', color : ''},
+            {alias : 'expert', title : 'Je suis un pilote !', image : '', color : ''}]
         $scope.myChoicesChoices = [
             {alias : '1', title : 'Passer le permis le plus rapidement possible'},
             {alias : '2', title : 'Pouvoir prendre le temps d\'apprendre sans pression et à mon rythme'},
