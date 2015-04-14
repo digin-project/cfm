@@ -6,7 +6,7 @@ angular.module('cfm')
         $scope.contact = {};
         $scope.days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
         $scope.message = false;
-        $scope.success = false;
+        $scope.success = undefined;
         $scope.captcha = "";
 
         function generateCaptcha() {
@@ -16,29 +16,37 @@ angular.module('cfm')
         generateCaptcha();
 
         $scope.send = function(contact) {
+            $scope.message = [];
             var _date = Date.parse(contact.birthday);
 
-            if(contact.captcha != $scope.captcha) {
-                $scope.message = "Veuillez recopier la clé de validation.";
-                $scope.success = false;
-
-                return;
+            if(contact.firstname == undefined || contact.firstname == "") {
+                $scope.message.push("Désolé, mais le champ Prénom est obligatoire.");
             }
 
-            // check if is a valid date !isNaN(_date)
-            $http.post('backend/mail.php', contact)
-                .success(function(data){
-                    if(data.success) {
-                        $scope.message = "Mail envoyé";
-                        $scope.success = true;
-                    } else {
-                        $scope.message = "Mail non envoyé";
-                        $scope.success = false;
-                    }
-                })
-                .error(function(data){
-                    $scope.success = false;
-                });
+            if(contact.lastname == undefined || contact.lastname == "") {
+                $scope.message.push("Désolé, mais le champ Nom est obligatoire.");
+            }
+
+            if(contact.mail == undefined || contact.mail == "") {
+                $scope.message.push("Désolé, mais le champ E.mail est obligatoire.");
+            }
+
+            if(contact.mobile == undefined || contact.mobile == "") {
+                $scope.message.push("Désolé, mais le champ Mobile est obligatoire.");
+            }
+
+            if(contact.captcha == undefined || contact.captcha.toUpperCase() != $scope.captcha.toUpperCase()) {
+                $scope.message.push("Vous avez saisie une clé erronée, le formulaire n'est pas validé.");
+            }
+
+            $http.post('backend/mail.php', contact).success(function(data){
+                if(data.success) {
+                    $scope.message.push("Mail envoyé");
+                    $scope.success = true;
+                }
+            }).error(function(data){
+                $scope.success = false;
+            });
         }
 
     });
