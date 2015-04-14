@@ -7,6 +7,8 @@ angular.module('cfm', ['ngRoute'])
         $routeProvider
             .when('/', { templateUrl: 'views/index.html', controller: 'IndexCtrl' })
             .when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl' })
+            .when('/cgv', { templateUrl: 'views/cgv.html' })
+            .when('/mentions', { templateUrl: 'views/mentions.html' })
             .otherwise({ redirectTo: '/' })
     })
 
