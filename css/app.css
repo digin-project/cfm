@@ -1,7 +1,7 @@
 nav.navbar {
     background: #fff;
-    height: 70px;
     border: 0;
+    margin-bottom: 0;
 }
 nav .navbar-header { height: 70px; }
 nav .navbar-header .navbar-brand {
@@ -14,12 +14,15 @@ nav .navbar-header .navbar-brand {
 nav .navbar-header .navbar-toggle {
     float: left;
     border: none;
-    position: relative;
     left: 5%;
     top: 11px;
 }
+
+nav .navbar-collapse {
+    overflow: hidden;
+}
+
 nav .navbar-header .navbar-toggle:hover { background: none; }
-nav .navbar-collapse { height: 0; }
 
 .flash {
     position: fixed;
@@ -38,12 +41,11 @@ nav .navbar-collapse { height: 0; }
     opacity : 0;
 }
 .errorMessages {
-    background-color: red;
+    background-color: #ba2124;
 }
 .clear {
     clear :both;
 }
-
 
 /** Contact view **/
 .alert {
@@ -77,4 +79,12 @@ nav .navbar-collapse { height: 0; }
     border: none;
     padding: 20px 10px;
     margin-bottom: 20px;
+}
+footer {
+    text-align: center;
+    color : #a5a9ac;
+}
+
+footer .socials a {
+    padding : 20px 0;
 }

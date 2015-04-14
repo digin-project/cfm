@@ -1,7 +1,7 @@
 #questionnaire {
 	padding : 20px 0;
 	margin-top: 20px;
-	background-color: grey;
+	background-color: #e4e4e4;
 }
 
 #questionnaire div label {
@@ -11,10 +11,21 @@
 }
 #questionnaire .step1 ul {
 	width: 100%;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #a5a9ac;
 	padding-left: 0;
 	padding-bottom: 20px;
 }
+
+#questionnaire div {
+    -webkit-animation: open_drawer 300ms ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: translateX(500px);
+}
+@-webkit-keyframes open_drawer {
+    to {
+        -webkit-transform: translateX(0);
+  	}
+  }
 #questionnaire .step1 ul li {
 	display:inline-block;
 	width : 20%;
@@ -25,11 +36,44 @@
 #questionnaire .step1 ul li a {
 	display: block;
 	width : 100%;
+	position: relative;
 }
+#questionnaire .step1 p {
+	color : #3f3f3f;
+	text-align: center;
+}
+
+#questionnaire .step1 ul li a.active:after {
+    content:"";
+  	position: absolute;
+	bottom : -25px;
+	left: 43%;
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;	
+	border-bottom: 10px solid #a5a9ac;
+}
+#questionnaire .step1 ul li a.active.debutant:after {	
+	border-bottom: 10px solid #277c40;
+}
+#questionnaire .step1 ul li a.active.confirme:after {	
+	border-bottom: 10px solid #ba2124;
+}
+#questionnaire .step1 ul li a.active.initie:after {	
+	border-bottom: 10px solid #22378c;
+}
+#questionnaire .step1 ul li a.active.expert:after {	
+	border-bottom: 10px solid #3f3f3f;
+}
+
 #questionnaire input[type="text"] {
 	width: 100%;
 	display: block;
 	padding : 5px;
+}
+#questionnaire select {
+	width: 100%;
 }
 #questionnaire .actions {
 	width: 100%;
@@ -40,10 +84,17 @@
 	padding : 20px;
 	border : none;
 	float: right;
+	background-color: #3f3f3f;
+	color : white;
 }
 #questionnaire .actions button:first-child {
 	float : left;
 }
+#questionnaire .actions .nextStep {
+	background-color: #be3a30;
+	color : white;
+}
+
 
 #questions .askQuestions {
 	padding-top : 20px;
@@ -55,4 +106,20 @@
 	color : black;
 	font-size: 0.9em;
 	text-decoration: none;
+}
+
+.avisClients > div a img {
+	margin : 0 auto;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	display: block;
+	max-width: 200px;
+}
+
+.avisClients > iframe {
+	display: block;
+	margin : 0 auto!important;
+}
+.avisClients > h4 {
+	text-align: center;
 }
