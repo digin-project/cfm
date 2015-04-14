@@ -31,5 +31,23 @@
             exit(json_encode($result));
         }
     }
-    
+
+    /**
+     * Check if request is allowed
+     * width server host and request method
+     *
+     * @param {Array} $opts, default contain GET method
+     * @return {Bool}
+     * @return {String} Json string
+     */
+    function isAllowedRequest(array $opts = array('method' => 'GET')) {
+        if($_SERVER['HTTP_HOST'] == HOST){
+            if($_SERVER['REQUEST_METHOD'] == $opts['method']) {
+                return true;
+            }
+        }
+
+        return JsonResponse(array("error" => 'Request not allowed.'));
+    }
+
 ?>
