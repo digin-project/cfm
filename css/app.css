@@ -58,6 +58,9 @@ nav .navbar-collapse { height: 0; }
     color: #be3a30;
     font-weight: bold;
 }
+#contact label.day {
+    margin-right: 10px;
+}
 #contact .captcha {
     width: 100%;
     height: 50px;
@@ -66,3 +69,12 @@ nav .navbar-collapse { height: 0; }
     font-size: 24px;
 }
 #contact .captcha p { margin: 0; }
+#contact button[type="submit"] {
+    width: 100%;
+    text-align: center;
+    background-color: #be3a30;
+    color: #fff;
+    border: none;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}

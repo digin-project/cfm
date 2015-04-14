@@ -30,10 +30,11 @@
         <div class="radio">
             <p>Vous souhaitez être rappeler de préférence</p>
             <div>
-                <label ng-repeat="day in days">
+                <label ng-repeat="day in days" class="day">
                     <input type="radio" value="{{ day | lowercase}}" ng-model="contact.day"> {{ day }}
                 </label>
             </div>
+            <hr>
             <div>
                 <label>
                     <input type="radio" value="matin" ng-model="contact.when"> Matin
@@ -43,6 +44,7 @@
                 </label>
             </div>
         </div>
+        <hr>
         <div class="form-group">
             <label for="contact-other">Vos demandes, remarques ou suggestions</label>
             <textarea class="form-control" ng-model="contact.other" id="contact-other"></textarea>
