@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="css/home.css">
     </head>
     <body>
+        <ng-include src="'views/templates/header.html'"></ng-include>
         <div ng-view></div>
+        <ng-include src="'views/templates/footer.html'"></ng-include>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/bootstrap/bootstrap.min.js"></script>
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>

@@ -1,6 +1,5 @@
 nav.navbar {
     background: #fff;
-    height: 70px;
     border: 0;
     margin-bottom: 0;
 }
@@ -15,12 +14,15 @@ nav .navbar-header .navbar-brand {
 nav .navbar-header .navbar-toggle {
     float: left;
     border: none;
-    position: relative;
     left: 5%;
     top: 11px;
 }
+
+nav .navbar-collapse {
+    overflow: hidden;
+}
+
 nav .navbar-header .navbar-toggle:hover { background: none; }
-nav .navbar-collapse { height: 0; }
 
 .flash {
     position: fixed;
