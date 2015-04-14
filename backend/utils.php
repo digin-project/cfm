@@ -33,6 +33,15 @@
     }
 
     /**
+     * Return an json error
+     *
+     * @return {String} json error
+     */
+    function ErrorJsonResponse() {
+        return JsonResponse(array("error" => 'Request not allowed.'));
+    }
+
+    /**
      * Check if request is allowed
      * width server host and request method
      *
@@ -47,7 +56,7 @@
             }
         }
 
-        return JsonResponse(array("error" => 'Request not allowed.'));
+        return ErrorJsonResponse();
     }
 
 ?>
