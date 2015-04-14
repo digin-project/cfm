@@ -4,7 +4,7 @@ require_once "config.php";
 $origin =  isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : null;
 $request_method = $_SERVER['REQUEST_METHOD'];
 
-$whitelist = DEV ? 'http://localhost' : 'mobile.cfm33.fr';
+$whitelist = DEV ? 'http://localhost:8080' : 'mobile.cfm33.fr';
 
 if($request_method == "POST" && $origin == $whitelist) {
     $data = json_decode(file_get_contents('php://input'));
