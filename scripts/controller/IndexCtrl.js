@@ -22,23 +22,38 @@ angular.module('cfm')
             {alias : '4', title : 'a proximité de mon domicile ou la possibilité de me loger'}
             ]
     	$scope.myQuest = questService.getMyQuest()
+        $scope.slider = {};
+
+        $scope.initSlider = function() {
+            $http.get('backend/slider.php').success(function(data){
+                $scope.slider = data;
+                console.log(data);
+            });
+        }
+
+        $scope.initSlider();
 
     	$scope.scrollQuestions = function() {
 
     	}
+
     	$scope.changeMyType = function(type) {
 			$scope.myQuest.myType = type;
     	}
+
     	$scope.changeMySector = function() {
             console.log(this)
 			//$scope.myQuest.mySector = loc;
-    	}    	
+    	}
+
     	$scope.changeMyImportant = function(imp) {
 			$scope.myQuest.myImportant = imp;
     	}
+
     	$scope.changeMyChoices = function(c) {
 			$scope.myQuest.myChoices = c;
     	}
+
     	$scope.changeStep = function() {
     		if($scope.step == 1) {
     			if($scope.myQuest.myType != "") {
@@ -75,9 +90,10 @@ angular.module('cfm')
                 }
             }
     	}
+
         $scope.resetStep = function() {
             if($scope.step > 1) $scope.step--
         }
 
-        
+
     });
