@@ -69,14 +69,14 @@
 				<div class="step3 col-md-12" ng-show="step == 3">
 					<label for="myImportant">Le plus important pour vous ? </label>
 					<select class="form-control" name="myImportant" id="myImportant" ng-model="myQuest.myImportant">
-						<option ng-repeat="m in myImportantChoices" value="m.alias">{{m.title}}</option>
+						<option ng-repeat="m in myImportantChoices" value="{{ m.alias }}">{{m.title}}</option>
 					</select>
 
 				</div>
 				<div class="step4 col-md-12" ng-show="step == 4">
 					<label for="myChoices">Quel est le critère décisif pour vous dans le choix d'une moto école ?</label>
 					<select class="form-control" name="myChoices" id="myChoices" ng-model="myQuest.myChoices">
-						<option ng-repeat="m in myChoicesChoices" value="m.alias">{{m.title}}</option>
+						<option ng-repeat="m in myChoicesChoices" value="{{ m.alias }}">{{m.title}}</option>
 					</select>
 
 				</div>

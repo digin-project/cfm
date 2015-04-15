@@ -55,7 +55,6 @@
                 return true;
             }
         }
-
         return ErrorJsonResponse();
     }
 

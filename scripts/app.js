@@ -6,6 +6,7 @@ angular.module('cfm', ['ngRoute'])
 
         $routeProvider
             .when('/', { templateUrl: 'views/index.html', controller: 'IndexCtrl' })
+            .when('/offres', { templateUrl: 'views/offres.html', controller: 'ProductsCtrl' })
             .when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl' })
             .when('/cgv', { templateUrl: 'views/cgv.html' })
             .when('/mentions', { templateUrl: 'views/mentions.html' })
@@ -38,4 +39,27 @@ angular.module('cfm', ['ngRoute'])
                 el.replaceWith(el.children());
             }
         };
+    })
+
+    .service('questService', function() {
+        var myQuest = {
+            myType : "",
+            mySector : "",
+            myImportant : "",
+            myChoices : ""
+        }
+
+        var setMyQuest = function(q) {
+            myQuest = q
+        }
+
+        var getMyQuest = function(){
+            return myQuest;
+        }
+
+        return {
+            setMyQuest: setMyQuest,
+            getMyQuest: getMyQuest
+        };
+
     });

@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('cfm')
-    .controller('IndexCtrl', function($rootScope, $scope, $http) {
+    .controller('IndexCtrl', function($rootScope, $scope, $http, $location, questService) {
     	$scope.hideQuestions = true;
     	$scope.step = 1;
     	$scope.myTypeChoices = [
@@ -21,12 +21,8 @@ angular.module('cfm')
             {alias : '3', title : 'L\'existence d\'une vraie communauté autour de la marque de laquelle vous pourriez faire partie'},
             {alias : '4', title : 'a proximité de mon domicile ou la possibilité de me loger'}
             ]
-    	$scope.myQuest = {
-    		myType : "",
-    		mySector : "",
-    		myImportant : "",
-    		myChoices : ""
-    	}
+    	$scope.myQuest = questService.getMyQuest()
+
     	$scope.scrollQuestions = function() {
 
     	}
@@ -72,6 +68,8 @@ angular.module('cfm')
             if($scope.step == 4) {
                 if($scope.myQuest.myType != "" && $scope.myQuest.mySector != "" && $scope.myQuest.myImportant != "" && $scope.myQuest.myChoices != "") {
                     //On traite le résultat du formulaire
+                    questService.setMyQuest($scope.myQuest)
+                    $location.path('/offres')
                 } else {
                     $rootScope.addErrorMsg("Vous devez choisir une option.");
                 }
