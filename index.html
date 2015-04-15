@@ -1,11 +1,15 @@
 <!doctype html>
 <html ng-app="cfm">
     <head>
-        <title></title>
+        <title>Moto Ecole Permis Bordeaux Mérignac Gironde - CFM 33</title>
+		<meta name="description" content="Le CFM, Centre de Formation Moto, enseigne la pratique de la moto depuis 30 ans. Notre école est basée à proximité de l'aéroport de Bordeaux Mérignac (rocade sortie 10).">
         <meta charset="utf-8">
+        <meta name="robots" content="index,follow">
         <meta name="theme-color" content="#149eb0">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <meta name="Copyright" content="CFM 33 (Centre de formation Moto)">
         <meta name="fragment" content="!"/>
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/app.css">
@@ -13,9 +17,9 @@
         <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
     </head>
     <body>
-        <ng-include src="'views/templates/header.html'"></ng-include>
+        <ng-include ng-cloack src="'views/templates/header.html'"></ng-include>
         <div ng-view></div>
-        <ng-include src="'views/templates/footer.html'"></ng-include>
+        <ng-include ng-cloack src="'views/templates/footer.html'"></ng-include>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/bootstrap/bootstrap.min.js"></script>
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
