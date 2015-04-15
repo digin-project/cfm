@@ -23,14 +23,15 @@ angular.module('cfm')
 			  top: '50%', // Top position relative to parent
 			  left: '50%' // Left position relative to parent
 			};
-			var target = document.getElementById('spin');
+			var target = document.getElementById('content');
 			$scope.spinner = new Spinner(opts).spin(target);
 		}
 
 		$scope.stopSpin = function() {
-			$('#spin').slideUp()
-			var target = document.getElementById('spin');
-			$scope.spinner.stop()
+			$('.spinner').fadeOut(function() {
+				var target = document.getElementById('content');
+				$scope.spinner.stop()
+			})
 		}
 		$scope.searchProducts = function() {
 			$scope.startSpin();
