@@ -52,7 +52,7 @@
 					<input type="hidden" ng-model="myQuest.myType"/>
 					<ul class="myTypeChoices">
 						<li ng-repeat="m in myTypeChoices">
-							<a href="" ng-class="{'active' : myQuest.myType.alias == m.alias}" class="{{ m.alias }}" ng-click="changeMyType(m)"><img class="img-responsive"  src="images/cfm_{{ m.alias }}.png" alt=""></a>
+							<a href="" ng-class="{'active' : myQuest.myType.alias == m.alias}" class="{{ m.alias }}" ng-click="changeMyType(m)"><img class="img-responsive"  ng-src="images/cfm_{{ m.alias }}.png" alt=""></a>
 						</li>
 					</ul>
 					<p ng-bind="myQuest.myType.title"></p>
