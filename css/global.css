@@ -1,4 +1,19 @@
 html,body { overflow-x: hidden; }
+
+#clickToCall {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#clickToCall button {
+	background: transparent;
+	border: none;
+}
+#clickToCall button i {
+	color: #C0361A;
+	font-size: 26px;
+}
+
 .flash {
 	position: fixed;
 	top : 20px;
