@@ -1,6 +1,6 @@
 <?php
     require_once "utils.php";
-    isAllowedRequest();
+    // isAllowedRequest();
 
     $db = pdoConnect();
     $result = array();
