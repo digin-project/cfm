@@ -50,6 +50,20 @@ angular.module('cfm', ['ngRoute'])
         };
     })
 
+    .directive('backTop', function() {
+        return {
+            restrict: 'AE',
+            transclude: true,
+            template: "<div id='backToTop'><a ng-click='scrollTo(\"navbar\")' target='_self'><button><i class='fa fa-angle-up'></i></button></a></div>",
+            controller: function($anchorScroll, $location, $scope) {
+                $scope.scrollTo = function(id) {
+                    $location.hash(id);
+                    $anchorScroll();
+                }
+            }
+        }
+    })
+
     .service('questService', function() {
         var myQuest = {
             myType : ""
@@ -69,7 +83,7 @@ angular.module('cfm', ['ngRoute'])
         };
 
     })
-    
+
     .filter('to_trusted', ['$sce', function($sce){
         return function(text) {
             return $sce.trustAsHtml(text);
