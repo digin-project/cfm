@@ -6,6 +6,15 @@ angular.module('cfm', ['ngRoute'])
 
         $routeProvider
             .when('/', { templateUrl: 'views/index.html', controller: 'IndexCtrl' })
+
+            .when('/ecole/presentation', { templateUrl: 'views/ecole/presentation.html' })
+            .when('/ecole/tarifs', { templateUrl: 'views/ecole/tarifs.html' })
+            .when('/ecole/privilege', { templateUrl: 'views/ecole/privilege.html' })
+            .when('/ecole/hebergement', { templateUrl: 'views/ecole/hebergement.html' })
+            .when('/ecole/offre', { templateUrl: 'views/ecole/offre.html' })
+
+            .when('/permis', { templateUrl: 'views/permis.html' })
+            .when('/formations', { templateUrl: 'views/formations.html' })
             .when('/offres', { templateUrl: 'views/offres.html', controller: 'ProductsCtrl' })
             .when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl' })
             .when('/cgv', { templateUrl: 'views/cgv.html' })
