@@ -53,12 +53,10 @@ angular.module('cfm')
 			  success(function(data, status, headers, config) {
 				$scope.stopSpin();
 				for (var i = 0; i < data.length; i++) {
-					console.log(data[i].alias)
 					if($scope.wanted.indexOf(data[i].alias) != -1) {
 						$scope.offres.push(data[i]);
 					}
 				};
-				console.log($scope.offres)
 			  }).
 			  error(function(data, status, headers, config) {
 				$scope.stopSpin();
@@ -69,9 +67,18 @@ angular.module('cfm')
 		}
 
 		$scope.clickBox = function(a) {
-			var elem = $('#' + a);
-			if(elem.hasClass('hide')) { elem.removeClass('hide'); }
-			else { elem.addClass('hide'); }
+			var elem = $('#content-' + a);
+			var parent = elem.parent();
+			if(elem.hasClass('hide')) { 
+				parent.find('.less').removeClass('hide');
+				parent.find('.more').addClass('hide');
+				elem.removeClass('hide'); 
+			}
+			else { 
+				elem.addClass('hide'); 
+				parent.find('.more').removeClass('hide');
+				parent.find('.less').addClass('hide');
+			}
 		}
 		$scope.searchProducts();
     });

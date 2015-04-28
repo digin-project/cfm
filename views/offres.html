@@ -3,7 +3,9 @@
 <div class="offres row-fluid">
 	<div class="col-md-12 offreBox" ng-repeat="offre in offres">
 		<h2 ng-click="clickBox(offre.alias)">{{ offre.title }} <span>{{ offre.subtitle }}</span></h2>
-		<div id="{{ offre.alias }}" class="contentOffre hide">
+		<a ng-click="clickBox(offre.alias)" class="more">Afficher plus d'informations >></a>
+		<a ng-click="clickBox(offre.alias)" class="less hide">Afficher moins d'informations >></a>
+		<div id="content-{{ offre.alias }}" class="contentOffre hide">
 			<div ng-if="offre.permis" class="permis">
 				<p><strong>{{offre.permis}}</strong></p>
 			</div>
