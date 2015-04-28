@@ -126,3 +126,7 @@
 .reserver a img {
 	margin : 0 auto;
 }
+
+#presentation {
+	line-height: 1.5;
+}
