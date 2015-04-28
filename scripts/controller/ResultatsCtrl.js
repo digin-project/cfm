@@ -4,6 +4,7 @@ angular.module('cfm')
     .controller('ResultatsCtrl', function($rootScope, $scope, $http, $location, questService) {    	
 		$scope.myQuest = questService.getMyQuest()
 		$scope.offres = []
+		$scope.formations = []
 		$scope.wanted = ['personnalisee', 'accelere', 'validation', 'sport', 'maxi_scoot']
 		$scope.startSpin = function() {			
 			var opts = {
@@ -46,6 +47,15 @@ angular.module('cfm')
 						$scope.offres.push(data[i]);
 					}
 				};
+
+				$http.get('json/formations.json').
+				  success(function(data2, status, headers, config) {
+						for (var i = 0; i < data.length; i++) {
+							if($scope.wanted.indexOf(data2[i].alias) != -1) {
+								$scope.formations.push(data2[i]);
+							}
+						};
+				  });
 			  }).
 			  error(function(data, status, headers, config) {
 				$scope.stopSpin();

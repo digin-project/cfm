@@ -1,0 +1,103 @@
+[
+	{
+		"alias" : "pass_125",
+		"title" : "Pass'125 7H",
+		"subtitle" : "Moto/scooter",
+		"permis" : null,
+		"formation" : "<p>Depuis le 1er janvier 2011, la conduite d'une motocyclette légère (50 à 125cm3) ou d'un tricycle à moteur de plus de 50cm3 nécessite une formation de 7 heures pour les titulaires du permis B depuis plus de deux ans ne pouvant justifier d'avoir été assurés à leur nom pour une 125 cm3 au cours des 5 dernières années.</p><p>Le Centre de Formation moto 1 ère Ecole moto  vous propose LE PASS'7H 125 (sur 1 journée ou 2 demies journées)</p><p><ul><li>2 heures de théorie</li><li> 2 heures de pratique hors circulation (« sur plateau »)</li><li>3 heures de pratique en circulation</li></ul></p><p>LE CFM vous délivre sur place votre attestation de formation</p>",
+		"tarifs" : "<p>Pass 1 journée ou 2 demi journées de formation : <strong>200€</strong></p>"
+		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
+		, "volume" : false
+		, "motos" : [
+			{ "titre" : "Suzuki 125 DR", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/suzuki-125-DR.jpg"},
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+		]
+		, "hebergement" : null
+		, "pdf" : "http://www.cfm33.com/DOC/texte-decret-7h-de-formation-pour-conduite-125cm3.pdf"
+	},
+	{
+		"alias" : "initiation",
+		"title" : "STAGE",
+		"subtitle" : "Initiation moto",
+		"permis" : "Initiation 125 ou 650 CM3",
+		"formation" : "<p>Vous souhaitez découvrir les plaisirs liés à la conduite d’un deux roues ? vous envisagez de prendre un <strong>premier contact</strong> avec une moto car vous désirez obtenir votre permis? Vous êtes détenteur du permis A, mais vous n’avez <strong>pas pratiqué</strong> depuis un certain temps ? vous recherchez une solution alternative aux problèmes de circulation?</p><p><strong>Notre programme Initiation</strong>  vous propose, par une approche pédagogique et sécuritaire de valider votre projet.</p><p>Cette formation vous permet d’acquérir les connaissances nécessaires à la <strong>maîtrise</strong> d’une moto, de découvrir les règles de sécurité et le plaisir du deux roues.</p><p>Votre formation se décompose en différentes étapes :</p><p><strong>LE PASSEPORT INITIATION  ( 1 demi journée): Etre en capacité de maîtriser votre moto à allure lente et à allure normale</strong></p><ul><li>Etape 1 : Savoir se positionner sur sa moto. Connaître les principaux organes de celle-ci et maîtriser le poids de la machine (sans l’aide du moteur).</li><li>Etape 2 : Démarrage – Arrêt, maitrise du patinage d’embrayage.</li><li>Etape 3 : Tenir l’équilibre, être stable et guider la moto à faible allure.</li><li>Etape 4 : Monter et rétrograder les vitesses.</li><li>Etape 5 : Comprendre, utiliser et doser le frein avant et arrière en utilisation normale et en situation d’urgence.</li><li>Etape 6 : Connaître et appliquer la technique d'inclinaison de sa moto à allure normale et réagir face aux situations d’urgence (évitement d'un danger...)</li></ul><p><strong>LE PASSEPORT AUTONOMIE ( 3 demi journées de formation) :Etre en capacité de circuler sur la route en sécurité</strong></p><ul><li>Etape 7 : Cours théorique en salle permettant d’appréhender les règles de circulation spécifiques à la moto, rechercher les indices utiles, franchir les différents types d’intersection et y changer de direction.</li><li>Etape 8 : Cours de circulation avec mise en situation réelle sur la route.</li></ul><p><strong>Vous pouvez choisir de passer votre formation sur le véhicule de votre choix : 125  ou 650 CM3</strong></p>",
+		"tarifs" : "<p>Passeport initiation: 110 € pour les 125 cm3 et 120 € pour les 650 cm3</p><p>Passeport Autonomie : 300 € pour les 125 cm3 et 360 € pour les 650 cm3</p>"
+		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
+		, "volume" : false
+		, "motos" : [
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
+			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
+			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
+			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+		]
+		, "hebergement" : null
+		, "pdf" : "http://www.cfm33.com/DOC/texte-decret-7h-de-formation-pour-conduite-125cm3.pdf"
+	},
+	{
+		"alias" : "perfectionnement",
+		"title" : "STAGE",
+		"subtitle" : "Perfectionnement moto",
+		"permis" : null,
+		"formation" : "<p>Les stages de perfectionnement de conduite du Centre de Formation Moto sont des formations <strong>post-permis</strong> destinées aux particuliers et aux entreprises.</p><p>Elles ont pour objectifs de découvrir, renforcer ou améliorer les <strong>compétences techniques et comportementales</strong> afin de mieux appréhender les risques liés à la pratique du deux roues.</p><p>LES FORMATIONS DU CENTRE de FORMATION MOTO de BORDEAUX-MERIGNAC 1 ère Ecole moto :</p><p><strong>Niveau 1 : Conduite d'une moto en sécurité (1 jour)</strong></p><p>Renforcer les compétences (analyse des situations de conduite, principe de la conduite préventive, enjeu et pouvoir du pilote ) autour de la sécurité de conduite d'une moto après-permis, ou dans le cas d'une reprise après une longue interruption</p><p><i>public : jeune permis, motard occasionnel, titulaire du permis A1</i></p><p><strong>Niveau 2 : Dynamique de conduite d'une moto (1 jour)</strong></p><p>Renforcer les techniques de conduite d'une moto sur piste : freinage en ligne et en courbe, maîtrise des techniques d'inclinaison appliquée à la discipline du regard, maîtrise du sol et des conditions variables d'adhérence.</p><p><i>public : jeune permis, motard occasionnel, titulaire du permis A1</i></p><p><strong>Niveau 3: Découverte et techniques de pilotage d'une moto ( 1 jour)</strong></p><p>Découvrir et perfectionner les techniques de pilotage sur piste, et mieux comprendre les intéractions homme/machine/enjeux. Savoir identifier et maîtriser la trajectoire idéale, le déplacement du corps sur la machine, le freinage sur l'angle, les réglages de suspension, pression des pneumatiques et conséquences</p><p><i>public: motard confirmé (maîtrise des freins et du binome discipline regard/trajectoire)</i></p>",
+		"tarifs" : "<p>- 245 € la journée de formation</p><p>- 20% de remise pour toute inscription aux 3 stages (durée max de 2 ans)</p>"
+		,"horaires" : "<p>Rassemblement à 8h30</p><p>De 9h à 12h et de 14h00 à 17h30</p>"
+		, "volume" : false
+		, "motos" : [
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
+			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
+			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
+			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+		]
+		, "myBike" : true
+		, "hebergement" : null
+		, "pdf" : null
+	},
+	{
+		"alias" : "pilote",
+		"title" : "STAGE",
+		"subtitle" : "Pilotage moto",
+		"permis" : null,
+		"formation" : "<p>L'école de pilotage du CFM 1 ère Ecole motode Bordeaux-Mérignac propose trois stages de <strong>pilotage sur le circuit</strong> de Bordeaux-Mérignac</p><p>Ces stages s'adressent aux motards qui veulent <strong>s'initier, se perfectionner, ou s'entrainer</strong> dans le cadre de la préparation à la compétition avec des instructeurs pilotes compétiteurs diplômés.</p><p>Pour chaque stage, des groupes de niveaux sont déterminés après évaluation sur piste au travers d'un parcours test.</p><p>Pour tous renseignements, vous pouvez contacter le CFM 1 ère Ecole moto  au 05.57.29.14.10</p><p>Les cours de perfectioonnement de conduite et de pilotage sont réalisés avec des moniteurs diplomés et compétiteurs dans divers championnats Français, Européens.</p><p><u>Objectifs spécifiques des stages :</u></p><p><ul><li>séance de travail sur le freinage : progressif, degressif, repartition, gestion du drible, sur l'angle</li><li>séance de travail sur la trajectoire et l'engagement sur l'angle, angle maxi, gestion des transferts de charge</li><li>séance de travail sur la position, le deplacement du corps au freinage , en virage, en enfilade et en courbe, conséquences et enjeux sur le comportement de la machine.</li><li>séance de travail sur les enchainements des differentes techniques apréhendées lors du stage</li><li>test pour chaque fin de stage, et bilan des acquis, projection des objectifs à poursuivre</li><li>2h de théorie, 5h de pratiques sur piste</li><li>possibilité de louer sur place une moto de piste ( 185 €/jour)</li><li>Location de combinaison, botte et dorsale sur place ( 80€/jour)</li></ul></p><p><strong>Stage NIVEAU 1 : 1 jour</strong></p><p>Objectif : Maîtriser le déplacement du corps en fonction des transferts de charge, la trajectoire, la régularité de performance (séries tours chronométrés)</p><p><strong>Stage NIVEAU 2 : 2 jours</strong></p><p>Objectif : Maîtriser la performance chronométrée en suiveur du pilote instructeur.</p><p>Se préparer ou s'entrainer aux conditions de compétition.</p>"
+		,"tarifs" : "<p>-245 € pour le stage Niveau 1 ( 1 journée)</p><p>- 450 € pour le stage Niveau 2 ( 2 jours)</p><p>- 20% de remise pour toute inscritpion aux 2 stages (durée max de 2 ans)</p>"
+		,"horaires" : "<p>Rassemblement à 8h30</p><p>De 08H45 à 12h et de 14h à 17h30</p>"
+		, "volume" : false
+		, "motos" : [
+			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"}
+		]
+		, "myBike" : true
+		, "hebergement" : null
+		, "pdf" : null
+	},
+	{
+		"alias" : "entreprise"
+		,"title" : "Formation"
+		,"subtitle" : "Entreprise"
+		,"permis" : null
+		,"formation" : "<p>Les stages de perfectionnement de conduite du Centre de Formation Moto sont des <strong>formations post-permis</strong> qui ont pour objectifs de découvrir, renforcer ou améliorer les compétences techniques et comportementales afin de mieux appréhender les risques liés à la pratique du deux roues.</p><p>LES FORMATIONS DU CENTRE de FORMATION MOTO de BORDEAUX-MERIGNAC 1 ère Ecole moto :</p><p>Le centre est agréé par la préfécture de la gironde sous le numéro d'agrément: E0603311730</p><p><strong>STAGE NIVEAU 1: CONDUITE D'UN 2 ROUES A PARTIR DE 125 CM3</strong></p><p><ul><li>Objectif: Renforcer les compétences liées à la manipulation et l'utilisation d'un 2 roues motorisé type 125 et/ou scooter sur piste sécurisée.</li><li>Volume de formation: 14h</li><li>Véhicules fournis : Scooter, véhicule auto suiveur, radio, formateur agréé (BEPECASER)</li><li>Théorie : 2h30</li></ul></p><p>Rappel des règles, accidentologie, risque lié au trajet domicile/travail, météorologie et conditions d'adhérence précaire, rôle de l'équipement, comportement préventif en circulation.</p><p>Mise en situation sur piste sécurisée : 7h30</p><p>Analyse et découverte du comportement dynamique (freinage en ligne et en courbe, situation d'évitement et de freinage, positions variables sur la chaussée, recherche des trajectoires de sécurité), gestion des inter distances et surfaces de contraintes.</p><p>Mise en situation en condition réelle de circulation : 4h</p><p>Evaluation sur trajet domicile/travail, repérage des situations à risques et mise en oeuvre des techniques de prévention.</p><p>Analyse de groupe, détermination des comportements à adopter et mise en oeuvre collective en situation et en écoute pédagogique PAR ROULEMENT (véhicule suiveur)</p><p><strong>STAGE NIVEAU 2 : CONDUITE D'UNE MOTO TYPE PERMIS A</strong></p><p>Objectif: Renforcer les compétences liées à la manipulation et l'utilisationd'un 2 roues motorisé type A sur piste sécurisée. Utilisation des véhicules personnels et des véhicules de l'école.</p><p>Volume de formation : 14h</p><p>Véhicules fournis : 650cc Suzuki GLADIUS, véhicule auto suiveur, radio, formateur agréé (BEPECASER)</p><p>Infrastructures : Circuit de Bordeaux-Mérignac, réseau routier primaire  (proximité entreprise/domicile)</p><p>Théorie : 2h30</p><p>Rappel des règles, accidentologie, rique lié au trajet domicile/travail, météorologie et conditions d'adhérence précaire, rôle de l'équipement, comportement préventif en circulation.</p><p>Mise en situation sur piste sécurisée : 6h30</p><p>Analyse et découverte du comportement dynamique (freinage en ligne et en courbe, situation d'évitement et de freinage, positions variables sur la chaussée, recherche de trajectoires de sécurité), gestion des inter distances et surfaces de contraintes, variable d'adhérence, conséquence et action possible à mener</p><p>Mise en situation en condition réelle de circulation : 5h</p><p>Evaluation sur trajet domicile/travail, repérage des situations à risques et mise en oeuvre des techniques de prévention.</p><p>Analyse de groupe, détermination des comportements à adopter et mise en oeuvre collective en situation et en écoute pédagogique PAR ROULEMENT (véhicule suiveur)</p><p>Réalisation d'un document collectif regroupant les régles et principes actifs de la conduite préventive</p>"
+		,"tarifs" : null
+		,"horaires" : null
+		,"volume" : false
+		,"motos" : null
+		,"myBike" : false
+		,"hebergement" : null
+		,"pdf" : null
+	},
+	{
+		"alias" : "mini_moto"
+		,"title" : "MINI MOTO"
+		,"subtitle" : "A partir de 6 ans"
+		,"permis" : null
+		,"formation" : "<p>En partenariat avec le CFM 1 ère Ecole moto, Kid Découverte Moto initie votre enfant, dès <strong>6 ans</strong>, aux plaisirs de la moto dans un cadre <strong>adapté et sécurisé.</strong></p><p>KDM est un moto-club située en face du CFM Bordeaux-Mérignac, formant des enfants au <strong>pilotage de moto</strong> (cross, enduro, vitesse) depuis 2005.</p><p>Cette école est labellisée Ecole Française de Motocyclisme de compétition par la Fédération Française de Motocyclisme, depuis 2008... Les cours et les stages sont organisés et dirigés  par Frédéric, éducateur diplômé d'un BEES 1er degré option motocyclisme, également  habilité à délivrer des <strong>licences et des 'guidons'</strong>.</p><p>Les cours de pilotages moto ont lieu principalement  les mercredi après-midi pour les petits et les moins aguerris ou bien à Illats ( 45km de Bordeaux) pour les plus à l’aise sur les motos. Il est possible de s'inscrire en cours d'année afin de participer aux cours.</p><p>Des sorties sur d'autres terrains homologués sont régulièrement programmées. </p><p>Il n'existe que deux écoles labélisées en Aquitaine, c'est dire que KDM est <strong>reconnue pour son sérieux</strong> par les plus hautes instances fédérales.</p><p><a href='http://www.kdm-kids.com/'>Plus d'informations sur www.kdm-kids.com</a></p><p><img src='http://www.cfm33.com/STOCK/CFM4.jpg'></p>"
+		,"tarifs" : null
+		,"horaires" : null
+		,"volume" : false
+		,"motos" : null
+		,"myBike" : false
+		,"hebergement" : null
+		,"pdf" : null
+	}
+]
