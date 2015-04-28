@@ -15,7 +15,7 @@ angular.module('cfm', ['ngRoute'])
 
             .when('/permis', { templateUrl: 'views/permis.html', controller: 'PermisCtrl' })
             .when('/resultats', { templateUrl: 'views/resultats.html', controller: 'ResultatsCtrl' })
-            .when('/formations', { templateUrl: 'views/formations.html' })
+            .when('/formations', { templateUrl: 'views/formations.html', controller: 'FormationsCtrl' })
             .when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl' })
             .when('/cgv', { templateUrl: 'views/cgv.html' })
             .when('/mentions', { templateUrl: 'views/mentions.html' })
