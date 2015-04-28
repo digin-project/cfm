@@ -4,6 +4,18 @@ angular.module('cfm')
     .controller('ProductsCtrl', function($rootScope, $scope, $http, $location, questService) {
 		$scope.myQuest = questService.getMyQuest()
 		$scope.spinner = null;
+		$scope.offres = []
+		$scope.wanted = ['personnalisee']
+/**
+		$scope.offres.accelere
+		$scope.offres.maxi_scoot
+		$scope.offres.pass_125
+		$scope.offres.initiation
+		$scope.offres.perfectionnement
+		$scope.offres.validation
+		$scope.offres.sport
+		$scope.offres.pilotage
+**/
 		$scope.startSpin = function() {			
 			var opts = {
 			  lines: 11, // The number of lines to draw
@@ -37,13 +49,19 @@ angular.module('cfm')
 			$scope.startSpin();
 			console.log($scope.myQuest)
 			// Simple POST request example (passing data) :
-			$http.post('backend/products.php', $scope.myQuest).
+			$http.get('json/offres.json').
 			  success(function(data, status, headers, config) {
 				$scope.stopSpin();
-			  	console.log('status', status)
-			  	console.log('data', data)
+				for (var i = 0; i < data.length; i++) {
+					console.log(data[i].alias)
+					if($scope.wanted.indexOf(data[i].alias) != -1) {
+						$scope.offres.push(data[i]);
+					}
+				};
+				console.log($scope.offres)
 			  }).
 			  error(function(data, status, headers, config) {
+				$scope.stopSpin();
 			  	console.log('status', status)
 			  	console.log('data', data)
 

@@ -59,4 +59,10 @@ angular.module('cfm', ['ngRoute'])
             getMyQuest: getMyQuest
         };
 
-    });
+    })
+    
+    .filter('to_trusted', ['$sce', function($sce){
+        return function(text) {
+            return $sce.trustAsHtml(text);
+        };
+    }]);

@@ -1,1 +1,46 @@
-<div id="content"></div>
+<div id="content">
+</div>
+<div class="offres row-fluid">
+	<div class="col-md-12" ng-repeat="offre in offres">
+		<h2>{{ offre.title }} <span>{{ offre.subtitle }}</span></h2>
+		<div class="content">
+			<div class="permis">
+				<p><strong>{{offre.permis}}</strong></p>
+			</div>
+			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/La_Formation.jpg' alt='' width='32' height='32'>Votre formation</h3>
+			<div class="formation" ng-bind-html="offre.formation | to_trusted"></div>
+
+			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/tarifs.jpg' alt='' width='32' height='32'>Tarifs</h3>
+			<div class="tarifs" ng-bind-html="offre.tarifs | to_trusted"></div>		
+
+			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/Nos_motos.jpg' alt='' width='32' height='32'>Nos motos</h3>
+			<div class="row">
+				<div class="moto col-xs-6" ng-repeat="moto in offre.motos">
+					<img src="{{ moto.lien }}" alt="{{ moto.titre }}"><br/>
+					<small>{{ moto.titre }}</small>
+				</div>
+			</div>
+			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/Horaires_de_conduite.jpg' alt='' width='32' height='32'>Horaires de conduites</h3>
+			<div class="horaires" ng-bind-html="offre.horaires | to_trusted"></div>
+			
+			<div class="rappel">
+				<h4>Petit rappel du volume horaire en fonction du profil candidat :</h4>
+
+				<p><strong>Le stage Expert :</strong> 8 heures plateau/12 heures circulation. </br>
+					Formation conseillée à ceux pratiquant quotidiennement  la moto (titulaire du permis A1/A2)</p>
+
+				<p><strong>Le stage Confirmé :</strong> 16 heures plateau/12 heures circulation.</br>
+					Formation conseillée à ceux pratiquant très régulièrement la moto loisir (cross, enduro, circuit)</p>
+
+				<p><strong>Le stage Initié :</strong> 20 heures/12 heures circulation.</br>
+					Formation conseillée à ceux pratiquant régulièrement un deux roues léger</p>
+
+				<p><strong>Le stage débutant :</strong> 24 heures plateau/12 heures circulation.</br>
+					Formation conseillée à ceux pratiquant occasionnellement  deux roues léger</p>
+
+				<p><strong>Le stage Novice :</strong> 32 heures plateau/12 heures circulation.</br>
+					Formation conseillée à ceux n'ayant jamais pratiqué.</p>
+			</div>
+		</div>
+	</div>
+</div>
