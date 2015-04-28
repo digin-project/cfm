@@ -43,10 +43,7 @@ angular.module('cfm', ['ngRoute'])
 
     .service('questService', function() {
         var myQuest = {
-            myType : "",
-            mySector : "",
-            myImportant : "",
-            myChoices : ""
+            myType : ""
         }
 
         var setMyQuest = function(q) {

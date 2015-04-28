@@ -43,27 +43,8 @@
 					<p ng-bind="myQuest.myType.title"></p>
 					<p ng-if="!myQuest.myType">Veuillez choisir votre niveau parmis les propositions ci-dessus.</p>
 				</div>
-				<div class="step2 col-md-12" ng-show="step == 2">
-					<label for="mySector">Dans quel secteur résidez-vous ?</label>
-					<input type="text" ng-model="myQuest.mySector" placeholder="Code Postal (ex : 33700)"/>
-				</div>
-				<div class="step3 col-md-12" ng-show="step == 3">
-					<label for="myImportant">Le plus important pour vous ? </label>
-					<select class="form-control" name="myImportant" id="myImportant" ng-model="myQuest.myImportant">
-						<option ng-repeat="m in myImportantChoices" value="{{ m.alias }}">{{m.title}}</option>
-					</select>
-
-				</div>
-				<div class="step4 col-md-12" ng-show="step == 4">
-					<label for="myChoices">Quel est le critère décisif pour vous dans le choix d'une moto école ?</label>
-					<select class="form-control" name="myChoices" id="myChoices" ng-model="myQuest.myChoices">
-						<option ng-repeat="m in myChoicesChoices" value="{{ m.alias }}">{{m.title}}</option>
-					</select>
-
-				</div>
 				<div class="actions col-md-12">
-					<button ng-show="step > 1" ng-click="resetStep()">Retour</button>
-					<button class="nextStep" ng-click="changeStep()">Suivant ({{step}} / 4)</button>
+					<button class="nextStep" ng-click="changeStep()">Valider</button>
 					<div class="clear"></div>
 				</div>
 			</form>
