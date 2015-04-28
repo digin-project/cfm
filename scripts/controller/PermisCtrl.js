@@ -1,21 +1,9 @@
 'use strict'
 
 angular.module('cfm')
-    .controller('ProductsCtrl', function($rootScope, $scope, $http, $location, questService) {
-		$scope.myQuest = questService.getMyQuest()
+    .controller('PermisCtrl', function($rootScope, $scope, $http, $location) {
 		$scope.spinner = null;
 		$scope.offres = []
-		$scope.wanted = ['personnalisee', 'accelere', 'validation', 'sport', 'maxi_scoot']
-/**
-		$scope.offres.accelere
-		$scope.offres.maxi_scoot
-		$scope.offres.pass_125
-		$scope.offres.initiation
-		$scope.offres.perfectionnement
-		$scope.offres.validation
-		$scope.offres.sport
-		$scope.offres.pilotage
-**/
 		$scope.startSpin = function() {			
 			var opts = {
 			  lines: 11, // The number of lines to draw
@@ -47,21 +35,15 @@ angular.module('cfm')
 		}
 		$scope.searchProducts = function() {
 			$scope.startSpin();
-			console.log($scope.myQuest)
 			// Simple POST request example (passing data) :
 			$http.get('json/offres.json').
 			  success(function(data, status, headers, config) {
 				$scope.stopSpin();
-				for (var i = 0; i < data.length; i++) {
-					if($scope.wanted.indexOf(data[i].alias) != -1) {
-						$scope.offres.push(data[i]);
-					}
-				};
+				$scope.offres = data;
 			  }).
 			  error(function(data, status, headers, config) {
 				$scope.stopSpin();
-			  	console.log('status', status)
-			  	console.log('data', data)
+                $rootScope.addErrorMsg("Une erreur a empeché la récupération des offres. Merci de réessayer ou contacter un administrateur.");
 
 			  });
 		}

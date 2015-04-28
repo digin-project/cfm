@@ -26,7 +26,7 @@ angular.module('cfm')
             if($scope.myQuest.myType != "") {
                 //On traite le résultat du formulaire
                 questService.setMyQuest($scope.myQuest)
-                $location.path('/offres')
+                $location.path('/resultats')
             } else {
                 $rootScope.addErrorMsg("Vous devez choisir une option.");
             }
