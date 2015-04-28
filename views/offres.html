@@ -1,29 +1,40 @@
 <div id="content">
 </div>
 <div class="offres row-fluid">
-	<div class="col-md-12" ng-repeat="offre in offres">
-		<h2>{{ offre.title }} <span>{{ offre.subtitle }}</span></h2>
-		<div class="content">
-			<div class="permis">
+	<div class="col-md-12 offreBox" ng-repeat="offre in offres">
+		<h2 ng-click="clickBox(offre.alias)">{{ offre.title }} <span>{{ offre.subtitle }}</span></h2>
+		<div id="{{ offre.alias }}" class="contentOffre hide">
+			<div ng-if="offre.permis" class="permis">
 				<p><strong>{{offre.permis}}</strong></p>
 			</div>
-			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/La_Formation.jpg' alt='' width='32' height='32'>Votre formation</h3>
-			<div class="formation" ng-bind-html="offre.formation | to_trusted"></div>
+			<div ng-if="offre.content">
+				<h3>Reservé aux experts</h3>
+				<div class="content" ng-bind-html="offre.content | to_trusted"></div>
+			</div>
+			<div ng-if="offre.formation">
+				<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/La_Formation.jpg' alt='' width='32' height='32'>Votre formation</h3>
+				<div class="formation" ng-bind-html="offre.formation | to_trusted"></div>
+			</div>
+			<div ng-if="offre.tarifs">
+				<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/tarifs.jpg' alt='' width='32' height='32'>Tarifs</h3>
+				<div class="tarifs" ng-bind-html="offre.tarifs | to_trusted"></div>		
 
-			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/tarifs.jpg' alt='' width='32' height='32'>Tarifs</h3>
-			<div class="tarifs" ng-bind-html="offre.tarifs | to_trusted"></div>		
-
-			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/Nos_motos.jpg' alt='' width='32' height='32'>Nos motos</h3>
-			<div class="row">
-				<div class="moto col-xs-6" ng-repeat="moto in offre.motos">
-					<img src="{{ moto.lien }}" alt="{{ moto.titre }}"><br/>
-					<small>{{ moto.titre }}</small>
+			</div>
+			<div ng-if="offre.motos">
+				<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/Nos_motos.jpg' alt='' width='32' height='32'>Nos motos</h3>
+				<div class="row">
+					<div class="moto col-xs-6" ng-repeat="moto in offre.motos">
+						<img src="{{ moto.lien }}" alt="{{ moto.titre }}"><br/>
+						<small>{{ moto.titre }}</small>
+					</div>
 				</div>
 			</div>
-			<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/Horaires_de_conduite.jpg' alt='' width='32' height='32'>Horaires de conduites</h3>
-			<div class="horaires" ng-bind-html="offre.horaires | to_trusted"></div>
+			<div ng-if="offre.horaires" >
+				<h3><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/Horaires_de_conduite.jpg' alt='' width='32' height='32'>Horaires de conduites</h3>
+				<div class="horaires" ng-bind-html="offre.horaires | to_trusted"></div>
+			</div>
 			
-			<div class="rappel">
+			<div ng-if="offre.volume" class="rappel">
 				<h4>Petit rappel du volume horaire en fonction du profil candidat :</h4>
 
 				<p><strong>Le stage Expert :</strong> 8 heures plateau/12 heures circulation. </br>
@@ -41,6 +52,12 @@
 				<p><strong>Le stage Novice :</strong> 32 heures plateau/12 heures circulation.</br>
 					Formation conseillée à ceux n'ayant jamais pratiqué.</p>
 			</div>
+
+
+			<h3 ng-if="offre.hebergement"><img src='http://cfm33.com/STOCK/pictos_titres_pages_interieures/hebergement.jpg' alt='' width='32' height='32'>Stage permis + hébergement</h3>
+			<div ng-if="offre.hebergement" class="hebergement" ng-bind-html="offre.hebergement | to_trusted"></div>
 		</div>
 	</div>
 </div>
+<script>
+</script>

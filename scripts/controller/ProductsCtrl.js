@@ -5,7 +5,7 @@ angular.module('cfm')
 		$scope.myQuest = questService.getMyQuest()
 		$scope.spinner = null;
 		$scope.offres = []
-		$scope.wanted = ['personnalisee']
+		$scope.wanted = ['personnalisee', 'accelere', 'validation', 'sport', 'maxi_scoot']
 /**
 		$scope.offres.accelere
 		$scope.offres.maxi_scoot
@@ -66,6 +66,12 @@ angular.module('cfm')
 			  	console.log('data', data)
 
 			  });
+		}
+
+		$scope.clickBox = function(a) {
+			var elem = $('#' + a);
+			if(elem.hasClass('hide')) { elem.removeClass('hide'); }
+			else { elem.addClass('hide'); }
 		}
 		$scope.searchProducts();
     });
