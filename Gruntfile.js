@@ -92,6 +92,20 @@ module.exports = function(grunt) {
                     dest: 'dist/'
                 }]
             }
+        },
+
+        imagemin: {
+            options: {
+                optimizationLevel: 3,
+            },
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/images/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'dist/images/'
+                }]
+            }
         }
     });
 
@@ -100,9 +114,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('compile:inject', [
         'copy',
+        'imagemin',
         'cssmin',
         'uglify',
         'processhtml',
@@ -111,6 +127,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('compile', [
         'copy',
+        'imagemin',
         'cssmin',
         'uglify',
         'htmlmin'
