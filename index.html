@@ -10,9 +10,9 @@
         <meta name="Copyright" content="CFM 33 (Centre de formation Moto)">
         <meta name="fragment" content="!"/>
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
         <!-- build:css inline -->
+            <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/global.css">
             <link rel="stylesheet" href="css/app.css">
             <link rel="stylesheet" href="css/home.css">
@@ -24,18 +24,18 @@
         <div ng-view></div>
         <ng-include ng-cloack src="'views/templates/footer.html'"></ng-include>
         <back-top></back-top>
+        <!-- build:js inline -->
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
         <script type="text/javascript" src="scripts/bootstrap/bootstrap.min.js"></script>
         <script type="text/javascript" src="scripts/spin/spin.min.js"></script>
-        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-        <script type="text/javascript" src="scripts/app.js"></script>
-        <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-        <!-- build:js inline -->
-            <script type="text/javascript" src="scripts/controller/IndexCtrl.js"></script>
-            <script type="text/javascript" src="scripts/controller/ContactCtrl.js"></script>
-            <script type="text/javascript" src="scripts/controller/PermisCtrl.js"></script>
-            <script type="text/javascript" src="scripts/controller/ResultatsCtrl.js"></script>
-            <script type="text/javascript" src="scripts/controller/FormationsCtrl.js"></script>
+        <script type="text/javascript" src="scripts/controller/IndexCtrl.js"></script>
+        <script type="text/javascript" src="scripts/controller/ContactCtrl.js"></script>
+        <script type="text/javascript" src="scripts/controller/PermisCtrl.js"></script>
+        <script type="text/javascript" src="scripts/controller/ResultatsCtrl.js"></script>
+        <script type="text/javascript" src="scripts/controller/FormationsCtrl.js"></script>
         <!-- /build -->
     </body>
 </html>

@@ -18,7 +18,11 @@ module.exports = function(grunt) {
                         'fonts/**/*.*',
                         'json/**/*.json',
                         'css/**/*.css',
-                        'scripts/**/*.js'
+                        'scripts/**/*.js',
+                        'bower_components/jquery/dist/*.min.js',
+                        'bower_components/angular/*.min.js',
+                        'bower_components/angular-route/*.min.js',
+                        'bower_components/components-font-awesome/css/*.css'
                     ]
                 }]
             }
@@ -39,11 +43,15 @@ module.exports = function(grunt) {
 
         // Compile js files
         uglify: {
+            options: {
+                mangle: false,
+                report: 'gzip'
+            },
             target : {
                 files : [{
                     expand: true,
                     cwd : 'dist/scripts/',
-                    src: ['**/*.js'],
+                    src: ['controller/*.js', 'app.js'],
                     dest: 'dist/scripts/',
                     ext: '.js'
                 }]
@@ -78,7 +86,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'dist/',
-                    src: ['!index.html', 'views/{,*/}*.html'],
+                    src: ['index.html', 'views/{,*/}*.html'],
                     dest: 'dist/'
                 }]
             }
@@ -91,12 +99,19 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('compile', [
+    grunt.registerTask('compile:inject', [
         'copy',
         'cssmin',
         'uglify',
-        'htmlmin',
-        'processhtml'
+        'processhtml',
+        'htmlmin'
+    ]);
+
+    grunt.registerTask('compile', [
+        'copy',
+        'cssmin',
+        // 'uglify',
+        'htmlmin'
     ]);
 
 };
