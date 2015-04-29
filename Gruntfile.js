@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        // Copy files in dist/
         copy: {
             dist: {
                 files: [{
@@ -23,6 +24,7 @@ module.exports = function(grunt) {
             }
         },
 
+        // Compile css files
         cssmin: {
             target: {
                 files: [{
@@ -35,12 +37,8 @@ module.exports = function(grunt) {
             }
         },
 
+        // Compile js files
         uglify: {
-            // dist: {
-            //     files: {
-            //         'dist/app.min.js': ['dist/scripts/controller/IndexCtrl.js']
-            //     }
-            // }
             target : {
                 files : [{
                     expand: true,
@@ -52,6 +50,7 @@ module.exports = function(grunt) {
             }
         },
 
+        // Inject files (js and css) into index.html
         processhtml: {
             options: {
                 process: true,
@@ -66,6 +65,7 @@ module.exports = function(grunt) {
             }
         },
 
+        // Compile html files
         htmlmin : {
             dist: {
                 options: {
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', [
+    grunt.registerTask('compile', [
         'copy',
         'cssmin',
         'uglify',
