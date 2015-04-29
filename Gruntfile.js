@@ -19,10 +19,12 @@ module.exports = function(grunt) {
                         'json/**/*.json',
                         'css/**/*.css',
                         'scripts/**/*.js',
+                        'backend/*.php',
                         'bower_components/jquery/dist/*.min.js',
                         'bower_components/angular/*.min.js',
                         'bower_components/angular-route/*.min.js',
-                        'bower_components/components-font-awesome/css/*.css'
+                        'bower_components/components-font-awesome/**.*',
+                        'bower_components/components-font-awesome/fonts/**.*'
                     ]
                 }]
             }
@@ -110,7 +112,7 @@ module.exports = function(grunt) {
     grunt.registerTask('compile', [
         'copy',
         'cssmin',
-        // 'uglify',
+        'uglify',
         'htmlmin'
     ]);
 
