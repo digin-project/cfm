@@ -15,9 +15,54 @@ module.exports = function(grunt) {
                         'views/{,*/}*.html',
                         'images/{,*/}*.*',
                         'fonts/**/*.*',
-                        'json/**/*.json'
+                        'json/**/*.json',
+                        'css/**/*.css',
+                        'scripts/**/*.js'
                     ]
                 }]
+            }
+        },
+
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/css/',
+                    src: ['*.css'],
+                    dest: 'dist/css/',
+                    ext: '.css'
+                }]
+            }
+        },
+
+        uglify: {
+            // dist: {
+            //     files: {
+            //         'dist/app.min.js': ['dist/scripts/controller/IndexCtrl.js']
+            //     }
+            // }
+            target : {
+                files : [{
+                    expand: true,
+                    cwd : 'dist/scripts/',
+                    src: ['**/*.js'],
+                    dest: 'dist/scripts/',
+                    ext: '.js'
+                }]
+            }
+        },
+
+        processhtml: {
+            options: {
+                process: true,
+                data: {
+                    message: 'Hello world!'
+                }
+            },
+            dist: {
+                files: {
+                    'dist/index.html': ['dist/index.html']
+                }
             }
         },
 
@@ -33,7 +78,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'dist/',
-                    src: ['*.html', 'views/{,*/}*.html'],
+                    src: ['!index.html', 'views/{,*/}*.html'],
                     dest: 'dist/'
                 }]
             }
@@ -42,10 +87,16 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('default', [
         'copy',
-        'htmlmin'
+        'cssmin',
+        'uglify',
+        'htmlmin',
+        'processhtml'
     ]);
 
 };
