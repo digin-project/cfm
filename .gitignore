@@ -2,3 +2,4 @@ bower_components
 node_modules
 dist
 backend/config.php
+config_prod.txt
