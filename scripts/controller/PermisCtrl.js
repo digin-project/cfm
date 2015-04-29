@@ -1,9 +1,9 @@
 'use strict'
 
 angular.module('cfm')
-    .controller('ProductsCtrl', function($rootScope, $scope, $http, $location, questService) {
-		$scope.myQuest = questService.getMyQuest()
+    .controller('PermisCtrl', function($rootScope, $scope, $http, $location) {
 		$scope.spinner = null;
+		$scope.offres = []
 		$scope.startSpin = function() {			
 			var opts = {
 			  lines: 11, // The number of lines to draw
@@ -35,19 +35,32 @@ angular.module('cfm')
 		}
 		$scope.searchProducts = function() {
 			$scope.startSpin();
-			console.log($scope.myQuest)
 			// Simple POST request example (passing data) :
-			$http.post('backend/products.php', $scope.myQuest).
+			$http.get('json/offres.json').
 			  success(function(data, status, headers, config) {
 				$scope.stopSpin();
-			  	console.log('status', status)
-			  	console.log('data', data)
+				$scope.offres = data;
 			  }).
 			  error(function(data, status, headers, config) {
-			  	console.log('status', status)
-			  	console.log('data', data)
+				$scope.stopSpin();
+                $rootScope.addErrorMsg("Une erreur a empeché la récupération des offres. Merci de réessayer ou contacter un administrateur.");
 
 			  });
+		}
+
+		$scope.clickBox = function(a) {
+			var elem = $('#content-' + a);
+			var parent = elem.parent();
+			if(elem.hasClass('hide')) { 
+				parent.find('.less').removeClass('hide');
+				parent.find('.more').addClass('hide');
+				elem.removeClass('hide'); 
+			}
+			else { 
+				elem.addClass('hide'); 
+				parent.find('.more').removeClass('hide');
+				parent.find('.less').addClass('hide');
+			}
 		}
 		$scope.searchProducts();
     });

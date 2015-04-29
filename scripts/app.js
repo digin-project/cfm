@@ -6,7 +6,16 @@ angular.module('cfm', ['ngRoute'])
 
         $routeProvider
             .when('/', { templateUrl: 'views/index.html', controller: 'IndexCtrl' })
-            .when('/offres', { templateUrl: 'views/offres.html', controller: 'ProductsCtrl' })
+
+            .when('/ecole/presentation', { templateUrl: 'views/ecole/presentation.html' })
+            .when('/ecole/tarifs', { templateUrl: 'views/ecole/tarifs.html' })
+            .when('/ecole/privilege', { templateUrl: 'views/ecole/privilege.html' })
+            .when('/ecole/hebergement', { templateUrl: 'views/ecole/hebergement.html' })
+            .when('/ecole/offre', { templateUrl: 'views/ecole/offre.html' })
+
+            .when('/permis', { templateUrl: 'views/permis.html', controller: 'PermisCtrl' })
+            .when('/resultats', { templateUrl: 'views/resultats.html', controller: 'ResultatsCtrl' })
+            .when('/formations', { templateUrl: 'views/formations.html', controller: 'FormationsCtrl' })
             .when('/contact', { templateUrl: 'views/contact.html', controller: 'ContactCtrl' })
             .when('/cgv', { templateUrl: 'views/cgv.html' })
             .when('/mentions', { templateUrl: 'views/mentions.html' })
@@ -41,12 +50,23 @@ angular.module('cfm', ['ngRoute'])
         };
     })
 
+    .directive('backTop', function() {
+        return {
+            restrict: 'AE',
+            transclude: true,
+            template: "<div id='backToTop'><a ng-click='scrollTo(\"navbar\")' target='_self'><button><i class='fa fa-angle-up'></i></button></a></div>",
+            controller: function($anchorScroll, $location, $scope) {
+                $scope.scrollTo = function(id) {
+                    $location.hash(id);
+                    $anchorScroll();
+                }
+            }
+        }
+    })
+
     .service('questService', function() {
         var myQuest = {
-            myType : "",
-            mySector : "",
-            myImportant : "",
-            myChoices : ""
+            myType : ""
         }
 
         var setMyQuest = function(q) {
@@ -62,4 +82,10 @@ angular.module('cfm', ['ngRoute'])
             getMyQuest: getMyQuest
         };
 
-    });
+    })
+
+    .filter('to_trusted', ['$sce', function($sce){
+        return function(text) {
+            return $sce.trustAsHtml(text);
+        };
+    }]);

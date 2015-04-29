@@ -1,4 +1,37 @@
-html,body { overflow-x: hidden; }
+html,body { overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+
+/**
+ * BackTop directive
+ */
+#backToTop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+#backToTop button {
+	background-color: #C0361A;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+#backToTop button i { color: #fff; }
+
+#clickToCall {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#clickToCall button {
+	background: transparent;
+	border: none;
+}
+#clickToCall button i {
+	color: #C0361A;
+	font-size: 26px;
+}
+
 .flash {
 	position: fixed;
 	top : 20px;

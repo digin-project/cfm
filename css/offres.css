@@ -1,0 +1,17 @@
+.offres {
+	margin-bottom: 20px;
+}
+
+.offres .title {
+	background-color: #E8E8E8;
+	padding-top : 20px;
+	padding-bottom : 20px;
+}
+
+.offreBox > h2, .offreBox > a {
+	cursor: pointer;
+}
+
+.contentOffre > div > h3 > img {
+	margin-right: 10px;
+}
