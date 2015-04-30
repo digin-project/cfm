@@ -3,9 +3,7 @@
 angular.module('cfm')
     .controller('ResultatsCtrl', function($rootScope, $scope, $http, $location, questService) {    	
 		$scope.myQuest = questService.getMyQuest()
-		$scope.offres = []
-		$scope.formations = []
-		$scope.wanted = ['personnalisee', 'accelere', 'validation', 'sport', 'maxi_scoot']
+		$scope.volume = "32 heures plateau/12 heures circulation"
 		$scope.startSpin = function() {			
 			var opts = {
 			  lines: 11, // The number of lines to draw
@@ -35,35 +33,6 @@ angular.module('cfm')
 				$scope.spinner.stop()
 			})
 		}
-		$scope.searchProducts = function() {
-			$scope.startSpin();
-			console.log($scope.myQuest);
-			// Simple POST request example (passing data) :
-			$http.get('json/offres.json').
-			  success(function(data, status, headers, config) {
-				$scope.stopSpin();
-				for (var i = 0; i < data.length; i++) {
-					if($scope.wanted.indexOf(data[i].alias) != -1) {
-						$scope.offres.push(data[i]);
-					}
-				};
-
-				$http.get('json/formations.json').
-				  success(function(data2, status, headers, config) {
-						for (var i = 0; i < data.length; i++) {
-							if($scope.wanted.indexOf(data2[i].alias) != -1) {
-								$scope.formations.push(data2[i]);
-							}
-						};
-				  });
-			  }).
-			  error(function(data, status, headers, config) {
-				$scope.stopSpin();
-                $rootScope.addErrorMsg("Une erreur a empeché la récupération des offres. Merci de réessayer ou contacter un administrateur.");
-
-			  });
-		}
-
 		$scope.clickBox = function(a) {
 			var elem = $('#content-' + a);
 			var parent = elem.parent();
@@ -80,47 +49,30 @@ angular.module('cfm')
 		}
 
 		$scope.result = function() {
+			$scope.stopSpin();
 			if($scope.myQuest.myType != '') {
 				switch($scope.myQuest.myType.alias){
 					case 'expert':
-						/** Permis : Personnalisée, accéléré, validation A2 => A, Stage sport
-							Stages : pass125, stage initiation, perfectionnement, Pilotage **/
-						$scope.wanted = ['personnalisee', 'accelere', 'validation', 'sport', 'pass_125', 'initiation', 'perfectionnement', 'pilotage']
-						$scope.searchProducts();
+						$scope.volume = "8 heures plateau/12 heures circulation"
 						break;
 					case 'confirme':
-						/** Permis : Personnalisée, accéléré, maxi scoot
-							Stages : pass125, stage initiation, perfectionnement **/
-						$scope.wanted = ['personnalisee', 'accelere', 'maxi_scoot', 'pass_125', 'initiation', 'perfectionnement']
-						$scope.searchProducts();
+						$scope.volume = "16 heures plateau/12 heures circulation"
 						break;
 					case 'initie':
-						/** Permis : Personnalisée, accéléré, maxi scoot
-							Stages : pass125, stage initiation, perfectionnement**/
-						$scope.wanted = ['personnalisee', 'accelere', 'maxi_scoot', 'pass_125', 'initiation', 'perfectionnement']
-						$scope.searchProducts();
+						$scope.volume = "20 heures/12 heures circulation"
 						break;
 					case 'debutant':
-						/** Permis : Personnalisée, accéléré, maxi scoot
-							Stages : pass125, stage initiation, perfectionnement **/
-						$scope.wanted = ['personnalisee', 'accelere', 'maxi_scoot', 'pass_125', 'initiation', 'perfectionnement']
-						$scope.searchProducts();
+						$scope.volume = "24 heures plateau/12 heures circulation"
 						break;
 					case 'novice':
-						/** Permis : Personnalisée, accéléré, maxi scoot
-							Stages : pass125, stage initiation, perfectionnement **/
-						$scope.wanted = ['personnalisee', 'accelere', 'maxi_scoot', 'pass_125', 'initiation']
-						$scope.searchProducts();
+						$scope.volume = "32 heures plateau/12 heures circulation"
 						break;
 					default:
-						$scope.wanted = ['personnalisee', 'accelere', 'maxi_scoot', 'validation', 'sport', 'pass_125', 'initiation', 'perfectionnement', 'pilotage']
-						$scope.searchProducts();
+						$scope.volume = "32 heures plateau/12 heures circulation"
 						break;
 				}
 			} else {
-				$scope.wanted = ['personnalisee', 'accelere', 'maxi_scoot', 'validation', 'sport', 'pass_125', 'initiation', 'perfectionnement', 'pilotage']
-				$scope.searchProducts();
-
+				$location.path('/');
 			}
 		}
 		$scope.result()
