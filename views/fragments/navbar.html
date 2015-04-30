@@ -38,4 +38,4 @@
         </a>
     </div>
 </nav>
-<script type="text/javascript"> if(!$('#navbar-menu').hasClass('in')) $('#navbar-menu').find('li').on('click', function(){ return $('#navbar-menu').removeClass('in'); }); </script>
+<script type="text/javascript"> if(!$('#navbar-menu').hasClass('in')) $('#navbar-menu').find('a').not('.dropdown-toggle').on('click', function(){ return $('#navbar-menu').removeClass('in'); }); </script>
