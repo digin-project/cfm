@@ -78,17 +78,14 @@
 #questionnaire .actions {
 	width: 100%;
 	margin-top: 20px;
+	text-align: center;
 }
 #questionnaire .actions button {
 	width: 49%;
 	padding : 20px;
 	border : none;
-	float: right;
 	background-color: #3f3f3f;
 	color : white;
-}
-#questionnaire .actions button:first-child {
-	float : left;
 }
 #questionnaire .actions .nextStep {
 	background-color: #be3a30;
