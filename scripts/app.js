@@ -22,7 +22,8 @@ angular.module('cfm', ['ngRoute'])
             .otherwise({ redirectTo: '/' })
     })
 
-    .run(function($rootScope){
+    .run(function($rootScope, $location){
+
 		$rootScope.addErrorMsg = function(msg) {
             $rootScope.errorMsg = msg
             setTimeout(function() {
@@ -31,6 +32,10 @@ angular.module('cfm', ['ngRoute'])
                 })
             }, 2000);
         }
+
+        $rootScope.$on('$routeChangeSuccess', function(){
+            ga('send', 'pageview', $location.path());
+        });
 
     })
     /**
