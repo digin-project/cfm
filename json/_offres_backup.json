@@ -1,0 +1,84 @@
+[
+	{
+		"alias" : "personnalisee",
+		"title" : "PERMIS MOTO",
+		"subtitle" : "Formation personnalisée (calendrier sur mesure)",
+		"permis" : "Permis A, A1 et A2",
+		"formation" : "<p>Le Centre de formation moto de Bordeaux/Mérignac vous propose une formation sur mesure afin de vous accompagner à la réussite des examens du permis moto.</p><p>Vous pouvez choisir de préparer le permis A, le permis A1 (125 cm3) ou le permis A2</p><p>Afin de respecter au mieux vos étapes de progression et de vous proposer une pédagogie adaptée, nous positionnons lors de votre inscription une évaluation pratique sur piste.</br>Cette évaluation déterminera préalablement votre profil, ainsi que le volume d'heures de votre formation personnalisée (délais de 2 à 6 semaines pour être présenté aux examens). Vous pouvez réserver cette évaluation en ligne.</p><p>En fonction de votre profil, nous vous proposons 5 NIVEAUX DE FORMATION</p><p>Vous passez le permis pour la première fois ou votre permis B date de plus de 5 ans ? Vous devez passer l'examen du code de la route! </p>",
+		"tarifs" : "<p>Le CFM 1 ère Ecole moto vous propose différentes formules de prix :</p><p><a href='/#/ecole/tarifs'>1)  forfait 20h à 465 €</a></p><p><a href='/#/ecole/tarifs'>2) La formule illimitée à partir de 675 € selon votre profil</a></p><p><a href='/#/ecole/privilege'>Bénéficiez des avantages de la carte privilège.</a></p>"
+		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
+		, "volume" : true
+		, "motos" : [
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
+			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
+			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
+			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+		]
+		, "hebergement" : null
+	},
+	{
+		"alias" : "accelere",
+		"title" : "PERMIS MOTO",
+		"subtitle" : "Stage acceléré (5 jours)",
+		"permis" : "Permis A, A1 et A2",
+		"formation" : "<p>Le Centre de formation moto de Bordeaux/Mérignac vous propose une formation sur 5 jours* afin de vous accompagner à la réussite des examens du permis moto.</p><p>Vous pouvez choisir de préparer le permis A, le permis A1 (125 cm3) ou le permis A2</p><p>Afin de respecter au mieux vos étapes de progression et de vous proposer une pédagogie adaptée, nous positionnons lors de votre inscription une évaluation pratique sur piste.</br>Cette évaluation déterminera préalablement votre profil, ainsi que le volume d'heures de votre stage 5 jours (formule accélérée intégrant la présentation aux examens). Vous pouvez réserver cette évaluation en ligne.</p><p>En fonction de votre profil, nous vous proposons 5 NIVEAUX DE FORMATION</p><p>Vous passez le permis pour la première fois ou votre permis B date de plus de 5 ans ? Vous devez passer l'examen du code de la route! </p><p><small>* sous réserve des résultats de l'évaluation</small></p>",
+		"tarifs" : "<p>Le CFM 1 ère Ecole moto vous propose différentes formules de prix :</p><p><a href='/#/ecole/tarifs'>1)  Le Forfait 20h à 465 €</a></p><p><a href='/#/ecole/tarifs'>2) La formule illimitée à partir de 675 € selon votre profil</a></p><p><a href='/#/ecole/privilege'>Bénéficiez des avantages de la carte privilège.</a></p>"
+		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
+		, "volume" : true
+		, "motos" : [
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
+			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
+			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
+			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+		]
+		, "hebergement" : "<p>Paris, Bayonne, Pau, Périgueux, La Rochelle, Angoulème, Poitiers, Mont de Marsan, Dax, Agen, Toulouse.....</p><p> Vous n'êtes pas de la région et vous souhaitez consacrer une semaine au passage de votre permis ?</p><p>Le CFM vous propose:</p><p><strong>Le pack Permis dans la semaine + hébergement à partir de 750 € ! *</strong></p><p><a href='/#/ecole/hebergement'>Consultez nos bons plans hébergement à 5 minutes du CFM</a></p>"
+	},
+	{
+		"alias" : "validation",
+		"title" : "PERMIS MOTO",
+		"subtitle" : "Validation A2 => A (7 heures)",
+		"permis" : null,
+		"formation" : "<p><strong>UNE FORMATION DE 7 HEURES APRES 2 ANS DE PERMIS A2</strong></p><p>Le permis A2 est en réalité une passerelle vers le permis A qui sera alors accessible après deux années de pratique par une formation post-permis n'imposant pas un nouvel examen.</p><p>Cette formation est composée d'une séquence théorique et de deux séquences pratiques, dont l'une réalisée hors circulation et l'autre en circulation. La séquence en circulation comprend, le cas échéant, des phases d'écoute pédagogique.</p><p>Cette formation sera mise en place à compter du 19 janvier 2015.</p>",
+		"tarifs" : "<p>7 heures de formation.</p><p>POUR LES CLIENTS CFM : 180 €</p><p>POUR LES NON CLIENTS : 200 €</p>"
+		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
+		, "volume" : false
+		, "motos" : [
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
+			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
+			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
+			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
+			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+		]
+		, "hebergement" : null
+	},
+	{
+		"alias" : "sport",
+		"title" : "PERMIS MOTO",
+		"subtitle" : "Stage sport (3 jours)",
+		"permis" : null,
+		"formation" : null,
+		"tarifs" : null
+		,"horaires" : null
+		, "content" : "<p>Vous pratiquez un sport mécanique en compétition et vous n’avez pas votre permis moto ? GAGNEZ DU TEMPS !</p><p>Votre stage permis moto en 3 jours vous est proposé par PERMISPORT by CFM 1 ère Ecole moto</p><p><i>Pour en savoir plus, rendez vous sur <a href='http://www.permisport.fr'>www.permisport.fr</a></i></p>"
+		, "volume" : false
+		, "motos" : null
+		, "hebergement" : null
+	},
+	{
+		"alias" : "maxi_scoot",
+		"title" : "FORMATION",
+		"subtitle" : "Maxi scoot (2 à 6 semaines)",
+		"permis" : "Votre permis sur maxi scoot automatique",
+		"formation" : "<p>Exit le passage des vitesses et les rétrogradage !</p><p>Pour celles et ceux que le travail d'embrayage rebute, il est désormais possible de passer son permis moto sur un maxi scooter ou une moto automatique.<br/>Le principe est le même que pour le permis classique (même épreuves) sauf qu'à l'obtention de l'examen vous n'aurez accès qu'aux véhicules à boîte automatique ( une mention spécifiant cette restriction figurera sur votre permis)</p><p>Cette formule, disponible désormais au CFM 1 ère Ecole moto de Bordeaux Mérignac offre de nombreux avantages, d'autant qu'elle donne la possibilité de revenir plus tard à un permis moto « standard » ( passerelle vers le permis à boîte mécanique)</p><p><strong>Comment procéder ?</strong></p><p>Réservez votre formation auprès du CFM 1 ère Ecole moto  par téléphone au 05 57 29 14 10</p>",
+		"tarifs" : null
+		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
+		, "volume" : false
+		, "motos" : null
+		, "hebergement" : null
+	}
+]
