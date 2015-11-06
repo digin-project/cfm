@@ -5,7 +5,7 @@
 		"subtitle" : "Formation personnalisée (calendrier sur mesure)",
 		"permis" : "Permis A, A1 et A2",
 		"formation" : "<p>Le Centre de formation moto de Bordeaux/Mérignac vous propose une formation sur mesure afin de vous accompagner à la réussite des examens du permis moto.</p><p>Vous pouvez choisir de préparer le permis A, le permis A1 (125 cm3) ou le permis A2</p><p>Afin de respecter au mieux vos étapes de progression et de vous proposer une pédagogie adaptée, nous positionnons lors de votre inscription une évaluation pratique sur piste.</br>Cette évaluation déterminera préalablement votre profil, ainsi que le volume d'heures de votre formation personnalisée (délais de 2 à 6 semaines pour être présenté aux examens). Vous pouvez réserver cette évaluation en ligne.</p><p>En fonction de votre profil, nous vous proposons 5 NIVEAUX DE FORMATION</p><p>Vous passez le permis pour la première fois ou votre permis B date de plus de 5 ans ? Vous devez passer l'examen du code de la route! </p>",
-		"tarifs" : "<p>Le CFM 1 ère Ecole moto vous propose différentes formules de prix :</p><p><a href='/#/ecole/tarifs'>1)  forfait 20h à 465 €</a></p><p><a href='/#/ecole/tarifs'>2) La formule illimitée à partir de 675 € selon votre profil</a></p><p><a href='/#/ecole/privilege'>Bénéficiez des avantages de la carte privilège.</a></p>"
+		"tarifs" : "<p>Le CFM 1 ère Ecole moto vous propose différentes formules de prix :</p><p><a href='/#/ecole/tarifs'>1)  forfait 20h à 465 €</a></p><p><a href='/#/ecole/privilege'>Bénéficiez des avantages de la carte privilège.</a></p>"
 		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
 		, "volume" : true
 		, "motos" : [
@@ -24,7 +24,7 @@
 		"subtitle" : "Stage acceléré (5 jours)",
 		"permis" : "Permis A, A1 et A2",
 		"formation" : "<p>Le Centre de formation moto de Bordeaux/Mérignac vous propose une formation sur 5 jours* afin de vous accompagner à la réussite des examens du permis moto.</p><p>Vous pouvez choisir de préparer le permis A, le permis A1 (125 cm3) ou le permis A2</p><p>Afin de respecter au mieux vos étapes de progression et de vous proposer une pédagogie adaptée, nous positionnons lors de votre inscription une évaluation pratique sur piste.</br>Cette évaluation déterminera préalablement votre profil, ainsi que le volume d'heures de votre stage 5 jours (formule accélérée intégrant la présentation aux examens). Vous pouvez réserver cette évaluation en ligne.</p><p>En fonction de votre profil, nous vous proposons 5 NIVEAUX DE FORMATION</p><p>Vous passez le permis pour la première fois ou votre permis B date de plus de 5 ans ? Vous devez passer l'examen du code de la route! </p><p><small>* sous réserve des résultats de l'évaluation</small></p>",
-		"tarifs" : "<p>Le CFM 1 ère Ecole moto vous propose différentes formules de prix :</p><p><a href='/#/ecole/tarifs'>1)  Le Forfait 20h à 465 €</a></p><p><a href='/#/ecole/tarifs'>2) La formule illimitée à partir de 675 € selon votre profil</a></p><p><a href='/#/ecole/privilege'>Bénéficiez des avantages de la carte privilège.</a></p>"
+		"tarifs" : "<p>Le CFM 1 ère Ecole moto vous propose différentes formules de prix :</p><p><a href='/#/ecole/tarifs'>1)  Le Forfait 20h à 465 €</a></p><p><a href='/#/ecole/privilege'>Bénéficiez des avantages de la carte privilège.</a></p>"
 		,"horaires" : "de 8h à 12h et de 13h30 à 17h30"
 		, "volume" : true
 		, "motos" : [
