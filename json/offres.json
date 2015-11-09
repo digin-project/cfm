@@ -11,10 +11,9 @@
 		, "motos" : [
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
-			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
-			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
 			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
-			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"},
+			{ "titre" : "Honda Inegra 750", "lien" : "/images/honda_integra.jpg" }
 		]
 		, "hebergement" : null
 	},
@@ -30,10 +29,9 @@
 		, "motos" : [
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
-			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
-			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
 			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
-			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"},
+			{ "titre" : "Honda Inegra 750", "lien" : "/images/honda_integra.jpg" }
 		]
 		, "hebergement" : "<p>Paris, Bayonne, Pau, Périgueux, La Rochelle, Angoulème, Poitiers, Mont de Marsan, Dax, Agen, Toulouse.....</p><p> Vous n'êtes pas de la région et vous souhaitez consacrer une semaine au passage de votre permis ?</p><p>Le CFM vous propose:</p><p><strong>Le pack Permis dans la semaine + hébergement à partir de 750 € ! *</strong></p><p><a href='/#/ecole/hebergement'>Consultez nos bons plans hébergement à 5 minutes du CFM</a></p>"
 	},
@@ -49,10 +47,9 @@
 		, "motos" : [
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
-			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
-			{ "titre" : "Harley Davidson Nightster", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Harley_Davidson_Nightser.jpg"},
 			{ "titre" : "Suzuki Burmann 400", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Burgmann_400.jpg"},
-			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"}
+			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"},
+			{ "titre" : "Honda Inegra 750", "lien" : "/images/honda_integra.jpg" }
 		]
 		, "hebergement" : null
 	},

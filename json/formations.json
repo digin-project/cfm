@@ -27,7 +27,6 @@
 		, "motos" : [
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
-			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
 			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"},
             { "titre" : "Honda Inegra 750", "lien" : "/images/honda_integra.jpg" }
 		]
@@ -46,7 +45,6 @@
 		, "motos" : [
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650.jpg"},
 			{ "titre" : "Suzuki Gladius 650", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_Gladius_650_2.jpg"},
-			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"},
 			{ "titre" : "Suzuki 125 Sixteen", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_125_sixteen.jpg"},
             { "titre" : "Honda Inegra 750", "lien" : "/images/honda_integra.jpg" }
 		]
@@ -64,7 +62,7 @@
 		,"horaires" : "<p>Rassemblement à 8h30</p><p>De 08H45 à 12h et de 14h à 17h30</p>"
 		, "volume" : false
 		, "motos" : [
-			{ "titre" : "Suzuki GSR 750", "lien" : "http://www.cfm33.com/STOCK/motos_du_CFM/Suzuki_GSR_750.jpg"}
+			{ "titre" : "Honda Inegra 750", "lien" : "/images/honda_integra.jpg" }
 		]
 		, "myBike" : true
 		, "hebergement" : null
